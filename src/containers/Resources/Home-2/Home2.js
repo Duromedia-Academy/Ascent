@@ -29,17 +29,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const Home = () => {
   return (
     <div>
-      <section className=" one">
+      <section className=" one max-w-ok m-auto">
         <div className=" pt-14 lg:pt-0">
-          <div className=" flex flex-col-reverse lg:flex-row md:max-w-nice lg:max-w-me md:m-auto items-center justify-around text-gap   pb-10 mx-3">
-            <div className=" pt-8 md:pt-12 lg:pt-0 relative bottom-[-80px]">
+          <div className="md:grid md:grid-cols-2 flex px-4 mx-auto flex-col-reverse gap-16 ">
+            <div className=" pt-7  lg:pt-0 relative bottom-[-80px]">
               <img
                 src={pic115}
                 alt=""
-                className="md:w-pad lg:w-[540px] lg:h-[650px]  w-[520px] h-[520px]"
+                className="bg-contain   md:h-[650px]"
               />
             </div>
-            <div className=" max-w-sit md:max-w-nice lg:max-w-[520px]">
+            <div className="md:pt-24 pb-2 max-w-sit md:max-w-nice lg:max-w-[520px]">
               <h1 className=" text-4xl lg:text-[3.8rem] lg:leading-it font-normal ">
                 Share what you know; we'll help you get paid for it
               </h1>
@@ -68,7 +68,7 @@ const Home = () => {
                     </div>
                   </div>
                 </form>
-                <p className=" lg:max-w-omo  max-w-md text-lit ">
+                <p className=" lg:max-w-omo  max-w-md text-lit py-2">
                   *By submitting your email address, you agree to Teachable's{" "}
                   <a href="#/" className=" underline">
                     Terms of use
@@ -149,8 +149,8 @@ const Home = () => {
                   you know. No coding or design skills necessary.
                 </p>
               </div>
-              <div className=" relative bottom-[10px]  px-4 gap-6 pt-4">
-                <a href="#/" className=" underline">
+              <div className="   relative bottom-[10px]  px-4 gap-6  pt-10">
+                <a href="#/" className=" underline font-bold text-slate-700 text-lg">
                   Learn more
                 </a>
               </div>
@@ -167,8 +167,8 @@ const Home = () => {
                   ever. Sell PDFs, audio clips, and more.
                 </p>
               </div>
-              <div className=" relative bottom-[10px]  px-4 gap-6 pb-6">
-                <a href="#/" className=" underline">
+              <div className="   relative bottom-[10px]  px-4 gap-6  pt-10">
+                <a href="#/" className=" underline font-bold text-slate-700 text-lg">
                   Learn more
                 </a>
               </div>
@@ -186,7 +186,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="  relative bottom-[10px]  px-4 gap-6  pt-10">
-                <a href="#/" className=" underline  ">
+                <a href="#/" className="underline font-bold text-slate-700 text-lg ">
                   Learn more
                 </a>
               </div>
@@ -209,7 +209,7 @@ const Home = () => {
               <div className=" pt-8 lg:pt-12">
                 <a
                   href="#/"
-                  className=" text-[1.1rem] underline hover:decoration-goal  "
+                  className=" text-[1.1rem] py-1 border-b-2  hover:decoration-goal  "
                 >
                   View all plans
                 </a>
@@ -400,8 +400,8 @@ const Home = () => {
                   our mini course library on those topics and more.
                 </p>
               </div>
-              <div className=" relative bottom-[10px]  px-4 gap-6 pt-4">
-                <a href="#/" className=" underline">
+              <div className="  relative bottom-[0px]  px-4 gap-6  pt-10">
+                <a href="#/" className="underline font-bold text-slate-700 text-lg ">
                   Learn more
                 </a>
               </div>
@@ -418,8 +418,8 @@ const Home = () => {
                   find how-tos, creator interviews, and much more.
                 </p>
               </div>
-              <div className=" relative bottom-[10px]  px-4 gap-6 pb-6">
-                <a href="#/" className=" underline">
+              <div className="  relative bottom-[0px]  px-4 gap-6  pt-10">
+                <a href="#/" className="underline font-bold text-slate-700 text-lg ">
                   Learn more
                 </a>
               </div>
@@ -438,7 +438,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="  relative bottom-[10px]  px-4 gap-6  pt-10">
-                <a href="#/" className=" underline  ">
+                <a href="#/" className="underline font-bold text-slate-700 text-lg ">
                   Learn more
                 </a>
               </div>
