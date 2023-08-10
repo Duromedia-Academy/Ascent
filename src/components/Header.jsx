@@ -47,7 +47,7 @@ const Header = () => {
       <div className="flex gap-8 items-center">
         <div className="">
           <a href="/" className="text-2xl md:text-4xl">
-            teach:able
+            Ascent
           </a>
         </div>
         <div className=" hidden lg:block">
@@ -79,42 +79,52 @@ const Header = () => {
                   >
                     {/* <div className=" top-0 bottom-0 left-0 right-0 fixed" /> */}
                     <div className="grid md:grid-cols-2 absolute gap-2 bg-white px-2 py-[5px] z-[1] rounded ml-[-40px] ">
-                      <li className=" px-2 py-5 border-b border-black">
+                      <li className=" px-2 py-3 border-b border-gray-200">
                         <Link to="/OnlineCourses" className="hover:text-goal">
-                          Online Courses
+                          Techprenueur
                         </Link>
                       </li>
-                      <li className=" px-2 py-5 border-b border-black">
-                        <Link to="/TeachablePay" className="hover:text-goal">
-                          teachable:pay
+                     <li className=" px-2 py-3  border-b border-gray-200">
+                      <Link to=''className="hover:text-goal">
+                        Corporate
+                      </Link>
+                     </li>
+                      <li className=" px-2 py-3 border-b border-gray-200">
+                        <Link to="/" className="hover:text-goal">
+                          Profiling
                         </Link>
                       </li>
-                      <li className=" px-2 py-5 border-b border-black">
-                        <Link to="/Coaching" className="hover:text-goal">
-                          Coaching
+                      <li className=" px-2 py-3 border-b border-gray-200">
+                        <Link to="/" className="hover:text-goal">
+                          Ascent Kids
                         </Link>
                       </li>
-                      <li className=" px-2 py-5 border-b border-black">
-                        <Link to="/Generator" className="hover:text-goal">
-                          AI Curriculum Generator
-                        </Link>
-                      </li>
-                      <li className=" px-2 py-5">
+                      <li className=" px-2 py-3 border-b border-gray-200">
                         <Link
-                          to="/DigitalDownloads"
+                          to="/"
                           className="hover:text-goal"
                         >
-                          Digital Downloads
+                          Enterpreneur + Form page
                         </Link>
                       </li>
-                      <li className=" px-2 py-5">
+                      <li className=" px-2 py-3 border-b border-gray-200">
                         <Link to="/AllFeatures" className="hover:text-goal">
                           All Features
                         </Link>
                       </li>
-                      <li className=" px-2 py-5">
+                      <li className=" px-2 py-3 border-b border-gray-200">
                         <Link to="/Blogs/Post" className="hover:text-goal">
                           Post
+                        </Link>
+                      </li>
+                      <li className=" px-2 py-3 border-b border-gray-200">
+                        <Link to="/" className="hover:text-goal">
+                          Ascent :pay
+                        </Link>
+                      </li>
+                      <li className=" px-2 py-3 border-b border-gray-200">
+                        <Link to="/" className="hover:text-goal">
+                          Marketing Tools
                         </Link>
                       </li>
                     </div>
@@ -166,46 +176,42 @@ const Header = () => {
                   >
                     {/* <div className=" top-0 bottom-0 left-0 right-0 fixed" /> */}
                     <div className="grid z-[1] md:grid-cols-2 absolute gap-2 bg-white px-2 py-[5px] rounded ml-[-40px]">
-                      <li className=" px-2 py-5 border-b border-black">
+                      <li className=" px-2 py-3 border-b border-grey-200">
                         <Link to="/Podcast" className="hover:text-goal">
                           Podcast
                         </Link>
                       </li>
-                      <li className=" px-2 py-5 border-b border-black">
+                      <li className=" px-2 py-3 border-b border-grey-200">
                         <Link to="/Events" className="hover:text-goal">
                           Events
                         </Link>
                       </li>
-                      <li className=" px-2 py-5 border-b border-black">
+                      <li className=" px-2 py-3 border-b border-grey-200">
                         <Link to="/Downloads" className="hover:text-goal">
                           Downloads
                         </Link>
                       </li>
-                      <li className=" px-2 py-5 border-b border-black">
+                      <li className=" px-2 py-3 border-b border-grey-200">
                         <Link to="/Knowledge" className="hover:text-goal">
                           Knowledge Base
                         </Link>
                       </li>
-                      <li className=" px-2 py-5">
+                      <li className=" px-2 py-3 border-b border-grey-200">
                         <Link to="/Teachable" className="hover:text-goal">
-                          teachable:hq
+                          Ascent:hq
                         </Link>
                       </li>
-                      <li className=" px-2 py-5">
+                      <li className=" px-2 py-3 border-b border-grey-200">
                         <Link to="/BlogHome" className="hover:text-goal">
                           Blog
                         </Link>
                       </li>
-                      <li className=" px-2 pb-5">
+                      <li className=" px-2 pb-3 border-b border-grey-200">
                         <Link to="/Examples" className="hover:text-goal">
                           Examples
                         </Link>
                       </li>
-                      <li className=" px-2 pb-5">
-                        <Link to="/Home-2" className="hover:text-goal">
-                          Home-2
-                        </Link>
-                      </li>
+                     
                     </div>
                   </motion.div>
                 </motion.div>
@@ -276,47 +282,56 @@ const Header = () => {
                         variants={subAnimate}
                       >
                         {/* <div className=" top-0 bottom-0 left-0 right-0 fixed" /> */}
-                        <div className="grid md:grid-cols-2 bg-white px-2 py-[5px] rounded ">
-                          <li className=" px-2 py-5">
-                            <Link
-                              to="/OnlineCourses"
-                              className="hover:text-goal"
-                            >
-                              Online Courses
-                            </Link>
-                          </li>
-                          <li className=" px-2 py-5">
-                            <Link
-                              to="/TeachablePay"
-                              className="hover:text-goal"
-                            >
-                              teachable:pay
-                            </Link>
-                          </li>
-                          <li className=" px-2 py-5">
-                            <Link to="/Coaching" className="hover:text-goal">
-                              Coaching
-                            </Link>
-                          </li>
-                          <li className=" px-2 py-5">
-                            <Link to="/Generator" className="hover:text-goal">
-                              AI Curriculum Generator
-                            </Link>
-                          </li>
-                          <li className=" px-2 py-5">
-                            <Link
-                              to="/DigitalDownloads"
-                              className="hover:text-goal"
-                            >
-                              Digital Downloads
-                            </Link>
-                          </li>
-                          <li className=" px-2 py-5">
-                            <Link to="/AllFeatures" className="hover:text-goal">
-                              All Features
-                            </Link>
-                          </li>
-                        </div>
+                        <div className="grid grid-cols-2 text-sm absolute gap-2 bg-white px-10 py-[5px] z-[1] rounded ml-[-40px] ">
+                      <li className=" px-2 py-3 border-b border-gray-200">
+                        <Link to="/OnlineCourses" className="hover:text-goal">
+                          Techprenueur
+                        </Link>
+                      </li>
+                     <li className=" px-2 py-3  border-b border-gray-200">
+                      <Link to=''className="hover:text-goal">
+                        Corporate
+                      </Link>
+                     </li>
+                      <li className=" px-2 py-3 border-b border-gray-200">
+                        <Link to="/" className="hover:text-goal">
+                          Profiling
+                        </Link>
+                      </li>
+                      <li className=" px-2 py-3 border-b border-gray-200">
+                        <Link to="/" className="hover:text-goal">
+                          Ascent Kids
+                        </Link>
+                      </li>
+                      <li className=" px-2 py-3 border-b border-gray-200">
+                        <Link
+                          to="/"
+                          className="hover:text-goal"
+                        >
+                          Enterpreneur + Form page
+                        </Link>
+                      </li>
+                      <li className=" px-2 py-3 border-b border-gray-200">
+                        <Link to="/AllFeatures" className="hover:text-goal">
+                          All Features
+                        </Link>
+                      </li>
+                      <li className=" px-2 py-3 border-b border-gray-200">
+                        <Link to="/Blogs/Post" className="hover:text-goal">
+                          Post
+                        </Link>
+                      </li>
+                      <li className=" px-2 py-3 border-b border-gray-200">
+                        <Link to="/" className="hover:text-goal">
+                          Ascent :pay
+                        </Link>
+                      </li>
+                      <li className=" px-2 py-3 border-b border-gray-200">
+                        <Link to="/" className="hover:text-goal">
+                          Marketing Tools
+                        </Link>
+                      </li>
+                    </div>
                       </motion.div>
                     </motion.div>
                   </li>
@@ -365,33 +380,44 @@ const Header = () => {
                         variants={subAnimate}
                       >
                         {/* <div className=" top-0 bottom-0 left-0 right-0 fixed" /> */}
-                        <div className="grid md:grid-cols-2 bg-white px-2 py-[5px] rounded">
-                          <li className=" px-2 py-5">
-                            <Link to="/Podcast" className="hover:text-goal">
-                              Podcast
-                            </Link>
-                          </li>
-                          <li className=" px-2 py-5">
-                            <Link to="/Events" className="hover:text-goal">
-                              Events
-                            </Link>
-                          </li>
-                          <li className=" px-2 py-5">
-                            <Link to="/Downloads" className="hover:text-goal">
-                              Downloads
-                            </Link>
-                          </li>
-                          <li className=" px-2 py-5">
-                            <Link to="/Knowledge" className="hover:text-goal">
-                              Knowledge Base
-                            </Link>
-                          </li>
-                          <li className=" px-2 py-5">
-                            <Link to="/Teachable" className="hover:text-goal">
-                              teachable:hq
-                            </Link>
-                          </li>
-                        </div>
+                        <div className="grid z-[1] grid-cols-2 absolute gap-2 bg-white text-sm px-10 py-[5px] rounded ml-[-40px]">
+                      <li className=" px-2 py-3 border-b border-grey-200">
+                        <Link to="/Podcast" className="hover:text-goal">
+                          Podcast
+                        </Link>
+                      </li>
+                      <li className=" px-2 py-3 border-b border-grey-200">
+                        <Link to="/Events" className="hover:text-goal">
+                          Events
+                        </Link>
+                      </li>
+                      <li className=" px-2 py-3 border-b border-grey-200">
+                        <Link to="/Downloads" className="hover:text-goal">
+                          Downloads
+                        </Link>
+                      </li>
+                      <li className=" px-2 py-3 border-b border-grey-200">
+                        <Link to="/Knowledge" className="hover:text-goal">
+                          Knowledge Base
+                        </Link>
+                      </li>
+                      <li className=" px-2 py-3 border-b border-grey-200">
+                        <Link to="/Teachable" className="hover:text-goal">
+                          Ascent:hq
+                        </Link>
+                      </li>
+                      <li className=" px-2 py-3 border-b border-grey-200">
+                        <Link to="/BlogHome" className="hover:text-goal">
+                          Blog
+                        </Link>
+                      </li>
+                      <li className=" px-2 pb-3 border-b border-grey-200">
+                        <Link to="/Examples" className="hover:text-goal">
+                          Examples
+                        </Link>
+                      </li>
+                     
+                    </div>
                       </motion.div>
                     </motion.div>
                   </li>
@@ -399,11 +425,15 @@ const Header = () => {
               </ul>
             </div>
           </div>
-          <div className=" absolute bottom-0 left-0 flex w-full lg:hidden">
-            <button className=" basis-1/2 p-8 text-xl">Log in</button>
-            <button className=" basis-1/2 bg-goal p-8 text-xl">
-              start for free
+          <div className=" absolute bg-black py-4 mx-auto px-4 bottom-0 left-0  w-full lg:hidden">
+            <div>
+            <button className=" basis-1/2  px-8 py-4 text-xl text-white">Log in</button>
+            </div>
+          <div>
+          <button className=" basis-1/2 bg-goal px-8 py-4  text-xl">
+              Start for free
             </button>
+          </div>
           </div>
         </div>
       )}

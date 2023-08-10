@@ -703,6 +703,14 @@ video {
   top: 72%;
 }
 
+.bottom-\[0px\] {
+  bottom: 0px;
+}
+
+.bottom-\[00px\] {
+  bottom: 00px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -810,6 +818,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .block {
   display: block;
 }
@@ -912,6 +924,38 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[0px\] {
+  height: 0px;
+}
+
+.h-\[7000px\] {
+  height: 7000px;
+}
+
+.h-\[700px\] {
+  height: 700px;
+}
+
+.h-\[60px\] {
+  height: 60px;
+}
+
+.h-\[px\] {
+  height: px;
+}
+
+.h-\[550px\] {
+  height: 550px;
+}
+
+.h-\[50px\] {
+  height: 50px;
+}
+
+.h-\[650px\] {
+  height: 650px;
 }
 
 .min-h-\[45vh\] {
@@ -1262,6 +1306,10 @@ video {
   flex-direction: row;
 }
 
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1531,6 +1579,11 @@ video {
   border-color: rgb(33 205 156 / var(--tw-border-opacity));
 }
 
+.border-gray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -1728,6 +1781,14 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-12 {
+  padding: 3rem;
+}
+
+.p-24 {
+  padding: 6rem;
 }
 
 .px-10 {
@@ -2078,6 +2139,10 @@ video {
   padding-top: 10%;
 }
 
+.pt-24 {
+  padding-top: 6rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2359,6 +2424,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-slate-700 {
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2802,8 +2872,16 @@ ol {
     display: flex;
   }
 
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-\[650px\] {
+    height: 650px;
   }
 
   .md\:min-h-\[70vh\] {
@@ -2914,6 +2992,10 @@ ol {
     gap: 1.5rem;
   }
 
+  .md\:gap-16 {
+    gap: 4rem;
+  }
+
   .md\:border-b-0 {
     border-bottom-width: 0px;
   }
@@ -3011,6 +3093,14 @@ ol {
 
   .md\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .md\:pt-24 {
+    padding-top: 6rem;
+  }
+
+  .md\:pt-7 {
+    padding-top: 1.75rem;
   }
 
   .md\:text-2xl {
