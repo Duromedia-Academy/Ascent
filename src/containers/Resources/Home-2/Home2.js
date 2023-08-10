@@ -31,8 +31,8 @@ const Home = () => {
     <div>
       <section className=" one max-w-ok m-auto">
         <div className=" pt-14 lg:pt-0">
-          <div className="md:grid md:grid-cols-2 flex px-4 mx-auto flex-col-reverse gap-16 ">
-            <div className=" pt-7  lg:pt-0 relative bottom-[-80px]">
+          <div className="md:grid md:grid-cols-2 flex px-4 mx-auto flex-col-reverse md:gap-16 ">
+            <div className=" md:pt-7  lg:pt-0 relative bottom-[-80px]">
               <img
                 src={pic115}
                 alt=""

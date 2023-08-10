@@ -2992,6 +2992,10 @@ ol {
     gap: 1.5rem;
   }
 
+  .md\:gap-16 {
+    gap: 4rem;
+  }
+
   .md\:border-b-0 {
     border-bottom-width: 0px;
   }
@@ -3093,6 +3097,10 @@ ol {
 
   .md\:pt-24 {
     padding-top: 6rem;
+  }
+
+  .md\:pt-7 {
+    padding-top: 1.75rem;
   }
 
   .md\:text-2xl {
