@@ -64,7 +64,7 @@ const FrontEnd = () => {
 
       {/* REQUIREMENTS */}
       <div className=" bg-[#17355c] text-white px-[5%] grid grid-cols-2 gap-10 gap-y-24 place-items-center py-32 md:grid-cols-3 lg:grid-cols-6 lg:justify-evenly lg:items-start">
-        <div className=" flex flex-col gap-3 items-center">
+        <div className=" flex flex-col gap-3 items-center ">
           <BsHourglassSplit className=" text-4xl text-teal-600" />
           <p className=" text-lg">Duration</p>
           <div className=" leading-3">

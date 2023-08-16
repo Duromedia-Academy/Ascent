@@ -1,4 +1,5 @@
 import React from "react";
+
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -43,7 +44,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="flex border-b border-black md:pb-3 md:justify-between gap-0 justify-between items-center px-[5%] md:py-[15px] py-[10px] z-10">
+    <nav className=" flex border-b border-black md:pb-3 md:justify-between gap-0 justify-between items-center px-[5%] md:py-[15px] py-[10px] z-10">
       <div className="flex gap-8 items-center">
         <div className="">
           <a href="/" className="text-2xl md:text-4xl">

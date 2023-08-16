@@ -6,18 +6,18 @@ module.exports = {
    
     extend: {
       colors: {
+        
         'peak':' rgb(34, 34, 34)',
-        'goal':'rgb(33, 205, 156)',
+        'goal':'#1DB954',
         'gap':'rgb(27, 73, 66)',
           'badge':'#F8FAF4',
         'lemon':'#C8E3D8',
         'sky':'#9ed5e7',
-        'blue':' #0d6efd',
+        'blue':' #030051',
         'rod':'#7499d0',
-    
         'brown':'rgb(34,34,34)',
         'cream':'rgb(248, 250, 244)',
-        'blu':'#41469c',
+       
       },
       fontSize:{
          'mag':'1.1rem',

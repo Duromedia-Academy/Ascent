@@ -28,7 +28,7 @@ import { EffectFade } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 const Home = () => {
   return (
-    <div>
+    <div className="GothamBlack" >
       <section className=" one max-w-ok m-auto">
         <div className=" pt-14 lg:pt-0">
           <div className="md:grid md:grid-cols-2 flex px-4 mx-auto flex-col-reverse md:gap-16 ">
@@ -149,7 +149,7 @@ const Home = () => {
                   you know. No coding or design skills necessary.
                 </p>
               </div>
-              <div className="   relative bottom-[10px]  px-4 gap-6  pt-10">
+              <div className="relative bottom-[10px]  px-4 gap-6  pt-10">
                 <a href="#/" className=" underline font-bold text-slate-700 text-lg">
                   Learn more
                 </a>

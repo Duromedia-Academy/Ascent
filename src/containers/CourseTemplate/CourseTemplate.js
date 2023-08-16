@@ -33,7 +33,7 @@ const CourseTemplate = ({
           </p>
         </Link>
         <p>{body}</p>
-        <div className=" flex gap-5">
+        <div className=" flex gap-5 relative bottom-[0px]  px-4  pt-10">
           <span className=" flex items-center gap-2 font-semibold">
             <SlCalender className=" font-bold text-xl" />
             <p>{duration}</p>

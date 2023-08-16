@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import './font/gotham-6-cufonfonts/GothamBlack.otf'
+
+import './app.css'
 import {
   Home,
   Courses,
