@@ -78,7 +78,7 @@ const Courses = () => {
         </div>
 
         <div className="">
-          <div className="px-[5%] py-6 flex flex-wrap gap-7 justify-center lg:justify-normal">
+          <div className="px-[5%] py-6 grid xl:grid-cols-4 lg:grid-cols-3   gap-10 justify-center lg:justify-normal mx-auto">
             <CourseTemplate
               courseImg={graphicImg}
               courseType="Onsight"
@@ -94,7 +94,7 @@ const Courses = () => {
               courseName="FullStack Web Development"
               body="Acquire the skills and knowledge needed to build a complete web development project from scratch to finish. Our Full-Stack Developer’s Program is a 6…"
               duration="6 Months"
-              days="Four times a week"
+              days="Twice a week"
             />
 
             <CourseTemplate
@@ -121,7 +121,7 @@ const Courses = () => {
               courseName="FullStack Web Development"
               body="Acquire the skills and knowledge needed to build a complete web development project from scratch to finish. Our Full-Stack Developer’s Program is a 6…"
               duration="6 Months"
-              days="Four times a week"
+              days="Twice a week"
             />
 
             <CourseTemplate

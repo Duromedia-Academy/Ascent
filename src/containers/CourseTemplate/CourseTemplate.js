@@ -13,7 +13,7 @@ const CourseTemplate = ({
   courseLink,
 }) => {
   return (
-    <div className="flex flex-col gap-7 md:gap-3 shadow-[0_5px_0.3rem_rgba(0,0,0,0.1)] hover:shadow-[0_5px_0.6rem_rgba(0,0,0,0.2)] rounded-md sm:h-[470px] sm:w-[300px] lg:w-[380px] relative">
+    <div className="flex flex-col gap-7 md:gap-3 shadow-[0_5px_0.3rem_rgba(0,0,0,0.1)] hover:shadow-[0_5px_0.6rem_rgba(0,0,0,0.2)] rounded-md relative">
       <div className="relative w-full h-full">
         <Link to={courseLink}>
           <img
