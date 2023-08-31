@@ -61,7 +61,7 @@ const Online = () => {
 
         {/* COURSES */}
 
-        <div className="px-[5%] py-6 flex flex-wrap gap-7 justify-center lg:justify-normal">
+        <div className="px-[5%] py-6  grid xl:grid-cols-4 lg:grid-cols-3   gap-10  justify-center lg:justify-normal">
           <CourseTemplate
             courseImg={graphicImg}
             courseType="Onsight"

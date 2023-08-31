@@ -1262,10 +1262,6 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -1909,11 +1905,6 @@ video {
   padding-bottom: 7%;
 }
 
-.py-\[8\%\] {
-  padding-top: 8%;
-  padding-bottom: 8%;
-}
-
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -2533,24 +2524,6 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-@font-face {
-  font-family: "GothamBold";
-
-  src: local("GothamBold"),
-   url("./font/gotham-6-cufonfonts/CarneroBold.ttf") format("truetype");
-
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "GothamBlack";
-
-  src: local("GothamBlack"),
-   url("./font/gotham-6-cufonfonts/GothamMedium.ttf") format("truetype");
-
-  font-weight: bold;
-}
-
 .custom-prev-button {
   background-color: blue;
   width: 40px;
@@ -2748,14 +2721,6 @@ ol {
 
   .sm\:h-\[250px\] {
     height: 250px;
-  }
-
-  .sm\:h-\[470px\] {
-    height: 470px;
-  }
-
-  .sm\:w-\[300px\] {
-    width: 300px;
   }
 
   .sm\:w-\[600px\] {
@@ -3298,10 +3263,6 @@ ol {
 
   .lg\:w-\[350px\] {
     width: 350px;
-  }
-
-  .lg\:w-\[380px\] {
-    width: 380px;
   }
 
   .lg\:w-\[400px\] {
@@ -4074,16 +4035,8 @@ ol {
 }
 
 @media (min-width: 1280px) {
-  .xl\:grid {
-    display: grid;
-  }
-
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .xl\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 } 
 

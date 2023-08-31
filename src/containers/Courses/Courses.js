@@ -21,7 +21,7 @@ const Courses = () => {
 
   return (
     <div>
-      <section className=" py-[8%]">
+      <section className=" py-[3%]">
         <div className="px-[5%]  text-[#17355c]">
           <div className=" hidden sm:block py-6">
             <div className="items-center gap-3 flex">
