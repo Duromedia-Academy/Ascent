@@ -2524,6 +2524,24 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+@font-face {
+  font-family: "GothamBold";
+
+  src: local("GothamBold"),
+   url("./font/gotham-6-cufonfonts/CarneroBold.ttf") format("truetype");
+
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "GothamBlack";
+
+  src: local("GothamBlack"),
+   url("./font/gotham-6-cufonfonts/GothamMedium.ttf") format("truetype");
+
+  font-weight: bold;
+}
+
 .custom-prev-button {
   background-color: blue;
   width: 40px;
