@@ -1,7 +1,13 @@
-import React, { useState } from "react";
-import './font/gotham-6-cufonfonts/GothamBlack.otf'
+import { useState, useEffect } from "react";
 
-import './app.css'
+
+import './input.css'
+
+
+import "./font/gotham/GothamBlack.otf";
+import "./font/gotham/GothamBold.otf";
+import "./font/gotham/GothamLight.ttf";
+
 import {
   Home,
   Courses,
@@ -56,7 +62,7 @@ function App() {
     return !pathsWithoutHeader.includes(location.pathname);
   };
 
-  React.useEffect(() => {
+ useEffect(() => {
     setShowHeader(shouldShowHeader());
   }, [location]);
 

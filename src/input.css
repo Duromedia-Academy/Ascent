@@ -1,18 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;    
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities"; 
 
 @font-face {
-  font-family: "GothamBold";
-  src: local("GothamBold"),
-   url("./font/gotham-6-cufonfonts/CarneroBold.ttf") format("truetype");
-  font-weight: bold;
+  font-family: "Gotham-Bold";
+  src: local("Gotham-Bold"),
+   url("./font/gotham/CarneroBold.ttf") format("truetype");
+  /* font-weight: bold; */
+ }
+@font-face {
+  font-family: "Gotham-Light";
+  src: local("Gotham-Light"),
+   url("./font/gotham/GothamLight.ttf") format("truetype");
+  /* font-weight: bold; */
  }
  @font-face {
-  font-family: "GothamBlack";
-  src: local("GothamBlack"),
-   url("./font/gotham-6-cufonfonts/GothamMedium.ttf") format("truetype");
-  font-weight: bold;
+  font-family: "Gotham-Medium";
+  src: local("Gotham-Medium"),
+   url("./font/gotham/GothamMedium.ttf") format("truetype");
+  /* font-weight: bold; */
  }
 .custom-prev-button {
     background-color: blue;
@@ -42,4 +48,8 @@
       @apply list-decimal
     } 
 
- 
+
+
+ body{
+  @apply font-GothamLight
+ }

@@ -2085,10 +2085,6 @@ video {
   text-align: start;
 }
 
-.font-YsabeauInfant {
-  font-family: Ysabeau Infant, sans-serif;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -2525,21 +2521,30 @@ video {
 }
 
 @font-face {
-  font-family: "GothamBold";
+  font-family: "Gotham-Bold";
 
-  src: local("GothamBold"),
-   url("./font/gotham-6-cufonfonts/CarneroBold.ttf") format("truetype");
+  src: local("Gotham-Bold"),
+   url("./font/gotham/CarneroBold.ttf") format("truetype");
 
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 @font-face {
-  font-family: "GothamBlack";
+  font-family: "Gotham-Light";
 
-  src: local("GothamBlack"),
-   url("./font/gotham-6-cufonfonts/GothamMedium.ttf") format("truetype");
+  src: local("Gotham-Light"),
+   url("./font/gotham/GothamLight.ttf") format("truetype");
 
-  font-weight: bold;
+  /* font-weight: bold; */
+}
+
+@font-face {
+  font-family: "Gotham-Medium";
+
+  src: local("Gotham-Medium"),
+   url("./font/gotham/GothamMedium.ttf") format("truetype");
+
+  /* font-weight: bold; */
 }
 
 .custom-prev-button {
@@ -2566,6 +2571,10 @@ video {
 
 ol {
   list-style-type: decimal;
+}
+
+body {
+  font-family: Gotham-Light;
 }
 
 .first-letter\:float-left::first-letter {
@@ -4056,6 +4065,4 @@ ol {
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
-} 
-
- 
+}
