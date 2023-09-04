@@ -814,6 +814,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .block {
   display: block;
 }
@@ -1905,6 +1909,11 @@ video {
   padding-bottom: 7%;
 }
 
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -2083,6 +2092,10 @@ video {
 
 .text-start {
   text-align: start;
+}
+
+.font-GothamBold {
+  font-family: Gotham-Bold;
 }
 
 .text-2xl {
@@ -2889,6 +2902,10 @@ body {
     max-width: none;
   }
 
+  .md\:max-w-tin {
+    max-width: 260px;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2990,6 +3007,11 @@ body {
   .md\:py-\[15px\] {
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+
+  .md\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 
   .md\:pb-12 {
