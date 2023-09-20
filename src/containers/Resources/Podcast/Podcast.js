@@ -16,8 +16,8 @@ const Podcast = () => {
         <div className=" lg:pt-72 lg:max-w-no lg:pl-8 m-auto lg:relative lg:bottom-[-30px]">
           <div className="bg-white lg:max-w-xl pl-3 py-8 lg:min-h-bot lg:pl-12 ">
             <div className="max-w-sit md:max-w-nice m-auto px-4 lg:px-0">
-              <h1 className="text-4xl  pb-8 lg:text-6xl md:text-5xl  ">
-                Everything is Teachable{" "}
+              <h1 className="text-4xl  pb-8 lg:text-6xl md:text-5xl ">
+                Everything is <span className="font-GothamBold block mt-3"> Teachable</span>{" "}
               </h1>
               <p className="lg:max-w-yes ">
                 A weekly deep dive into the minds and work lives of your
@@ -61,8 +61,10 @@ const Podcast = () => {
             />
           </div>
           <div className="">
+            <div className="font-GothamBold">
             <h2 className="text-4xl text-gap">Meet your host:</h2>
             <h2 className="text-4xl text-gap">Haleigh Fullilove</h2>
+            </div>
             <p className="lg:max-w-md py-10 text-mag  max-w-sit m-auto md:max-w-nice text-gap">
               I’m Haleigh Fullilove, Teachable’s senior social media strategist
               and new host of the Everything Is Teachable podcast. A little
@@ -126,7 +128,7 @@ const Podcast = () => {
       <div className="lg:md:py-24  pt-8 md:pt-12 px-12 md:px-0">
         <div className="flex lg:max-w-no md:m-auto flex-col lg:flex-row  items-center justify-around  md:max-w-nice ">
           <div className="lg:max-w-sit">
-            <h2 className="lg:max-w-md  max-w-sit m-auto md:max-w-nice text-2xl md:text-3xl text-gap">
+            <h2 className="lg:max-w-md  max-w-sit m-auto md:max-w-nice text-2xl font-GothamBold md:text-3xl text-gap">
               Catch up on the latest: Rewilding entrepreneurship with Lindsay
               Mack of Tarot for the Wild Soul
             </h2>
@@ -155,8 +157,8 @@ const Podcast = () => {
       </div>
 
       <div className="bg-cream ">
-        <div className=" lg:ml-48  ml-40">
-          <h1 className=" lg:text-6xl lg:py-20 text-gap text-3xl py-11 md:text-4xl">
+        <div className=" text-center">
+          <h1 className=" font-GothamBold lg:text-6xl lg:py-20 text-gap text-3xl py-11 md:text-4xl">
             Get caught up
           </h1>
           <div className="lg:pb-12 pb-8">
@@ -262,7 +264,7 @@ const Podcast = () => {
       </div>
 
       <div className=" bg-cream ">
-        <div className=" lg:max-w-no md:max-w-nice max-w-tin m-auto lg:py-24 pt-8 pb-24 border-b   border-brown ">
+        <div className=" lg:max-w-no md:max-w-nice px-6 m-auto lg:py-24 pt-8 pb-24 border-b   border-brown ">
           <h1 className=" lg:text-7xl text-gap lg:pb-10 md:text-4xl text-3xl pb-5">
             About Teachable
           </h1>

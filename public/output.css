@@ -818,6 +818,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .block {
   display: block;
 }
@@ -2131,6 +2135,10 @@ video {
 
 .text-start {
   text-align: start;
+}
+
+.font-GothamBold {
+  font-family: Gotham-Bold;
 }
 
 .text-2xl {
