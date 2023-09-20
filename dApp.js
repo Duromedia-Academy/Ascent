@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 
-
-import './input.css'
-
+import "./input.css";
 
 import "./font/gotham/GothamBlack.otf";
 import "./font/gotham/GothamBold.otf";
@@ -62,7 +60,7 @@ function App() {
     return !pathsWithoutHeader.includes(location.pathname);
   };
 
- useEffect(() => {
+  useEffect(() => {
     setShowHeader(shouldShowHeader());
   }, [location]);
 

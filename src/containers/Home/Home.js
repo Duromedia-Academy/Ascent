@@ -18,6 +18,9 @@ import { Link } from "react-router-dom";
 import CourseTemplate from "../CourseTemplate/CourseTemplate";
 
 const Home = () => {
+
+
+
   return (
     <div className="">
       <div
@@ -353,6 +356,8 @@ const Home = () => {
       </section>
     </div>
   );
+
+
 };
 
 export default Home;

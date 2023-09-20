@@ -26,7 +26,14 @@ import { Pagination, A11y } from "swiper/modules";
 import { EffectFade } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+
+
+import { useGlobalContext } from "../../../components/context";
 const Home = () => {
+
+    const data = useGlobalContext();
+
+    console.log(data);
   return (
     <div className="GothamBlack" >
       <section className=" one max-w-ok m-auto">
