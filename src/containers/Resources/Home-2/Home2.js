@@ -31,11 +31,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useGlobalContext } from "../../../components/context";
 const Home = () => {
 
-    const data = useGlobalContext();
+     const { closeSubmenu } = useGlobalContext();
 
-    console.log(data);
+  
   return (
-    <div className="GothamBlack" >
+    <div className="" onMouseOver={closeSubmenu}>
       <section className=" one max-w-ok m-auto">
         <div className=" pt-14 lg:pt-0">
           <div className="md:grid md:grid-cols-2 flex px-4 mx-auto flex-col-reverse md:gap-16 ">

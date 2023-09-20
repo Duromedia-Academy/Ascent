@@ -1,39 +1,53 @@
-import React from "react";
+import React, { useEffect, useRef, useState, useMemo } from "react";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { BiChevronDown } from "react-icons/bi";
 import { BiChevronUp } from "react-icons/bi";
 import { BsArrowRight } from "react-icons/bs";
+import { IoCloseSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "./context";
 import useMediaQuery from "./useMediaQuery";
 
+import sublinks from "./data";
+
 const Header = () => {
   const isAboveSmallScreens = useMediaQuery("(min-width: 1117px)");
+  const container = useRef(null);
 
-  const { openSidebar, openSubmenu, closeSubmenu } = useGlobalContext();
+  const {
+    openSidebar,
+    isSidebarOpen,
+    closeSidebar,
+    openSubmenu,
+    closeSubmenu,
+    isSubmenuOpen,
+    page,
+    location,
+  } = useGlobalContext();
 
-  // const displaySubmenu = (e) => {
-  //   const page = e.target.textContent;
-  //   const tempBtn = e.target.getBoundingClientRect();
-  //   const center = (tempBtn.left + tempBtn.right) / 2;
-  //   const bottom = tempBtn.bottom - 3;
-  //   openSubmenu(page, { center, bottom });
-  // };
-  // const handleSubmenu = (e) => {
-  //   if (!e.target.classList.contains("link-btn")) {
-  //     closeSubmenu();
-  //   }
-  // };
+  //   const handleSubmenu = (e) => {
+  // if (!e.target.classList.contains('link-btn')) {
+  //   closeSubmenu();
+  // }
+
+  // Memoize pageLinks to prevent unnecessary re-renders
+  const pageLinks = useMemo(() => (page ? page.links : []), [page]);
+
+  useEffect(() => {
+    // Your useEffect code here
+  }, [page, location, pageLinks]);
+
+  const displaySubmenu = (e) => {
+    const page = e.target.textContent;
+    openSubmenu(page);
+  };
 
   return (
     <nav className="  border-b border-black py-5 px-10 relative  ">
       <div className=" ">
-        {/* <div className="flex justify-between  items-center"  > */}
-
         <div
           className={`${
             !isAboveSmallScreens
@@ -58,175 +72,117 @@ const Header = () => {
                     </button>
                   </Link>
 
-                  <button className="">
+                  <button className="" onClick={openSidebar}>
                     <FaBars className=" text-2xl " />
                   </button>
                 </div>
               </div>
               {/* Mobile Fixed Menus */}
-              <div className="fixed  top-0 w-full h-full right-0 z-10">
+              <div
+                className={`${
+                  isSidebarOpen
+                    ? "fixed   top-0 w-full h-full right-0 z-10"
+                    : "hidden"
+                }`}
+              >
                 <div className="relative h-full  w-full right-0 ">
-                  <div className="bg-black overflow-y-scroll bg-blend-overlay opacity-[0.96] absolute w-full h-full z-30 p-10 ">
+                  <div
+                    className={`bg-black overflow-y-scroll bg-blend-overlay  opacity-[0.96] absolute w-full h-full z-30 p-10 transition-transform duration-500  ${
+                      isSidebarOpen
+                        ? "scale-100"
+                        : ""
+                    }  `}
+                  >
                     <div className="relative ">
-                      <ul className="absolute h-max min-h-max p-5  top-0 z-50 bg-white flex flex-col items-start space-y-6  w-full bg-white py-10 ">
-                        <li className="text-base lg:text-lg w-full font-semibold pb-1 border-b border-b-transparent transition duration-500 lg:hover:border-b lg:hover:border-green-700  ">
-                          <button className=" capitalize ">
-                            <div className="flex justify-center items-center">
-                              product
-                              <span>
-                                <BiChevronDown />
-                              </span>
-                            </div>
+                      <ul className="absolute h-max min-h-max p-5  top-0 z-50 flex flex-col items-start space-y-6  w-full bg-white py-10 ">
+                        <div className="absolute top-5 right-5">
+                          <button className="p-3" onClick={closeSidebar}>
+                            <IoCloseSharp className=" text-4xl " />
                           </button>
+                        </div>
 
-                          {/* Submenu */}
-                          <ul className=" ">
-                            <li className="py-4  ">
-                              <div className="pb-2 pl-2 border-b-4  uppercase text-xs text-gray-400 ">
-                                what you can sell
-                              </div>
+                        {sublinks.map((item, index) => {
+                          const { links, page } = item;
+                          return (
+                            <li
+                              key={index}
+                              className="text-base lg:text-lg w-full font-semibold pb-1 border-b border-b-transparent transition duration-500 lg:hover:border-b lg:hover:border-green-700  "
+                            >
+                              <button className=" capitalize ">
+                                <div className="flex justify-center items-center">
+                                  <h4>{page}</h4>
+                                  <span>
+                                    <BiChevronDown />
+                                  </span>
+                                </div>
+                              </button>
 
-                              <div className="flex flex-col space-y-5 mt-5 capitalize pl-5">
-                                <li to={"/"}>
-                                  <Link>Online courses</Link>
-                                </li>
-                                <li to={"/"}>
-                                  <Link>Coaching </Link>
-                                </li>
-                                <li to={"/"}>
-                                  <Link>Digital Downloads</Link>
-                                </li>
-                                <li to={"/"}>
-                                  <Link>Entrerprenuer</Link>
-                                </li>
-                                <li
-                                  to={"/"}
-                                  className=" font-bold border-b-2 pb-1 text-green-900"
-                                >
-                                  <Link
-                                    to={"/"}
-                                    className="flex space-x-2  items-center"
-                                  >
-                                    {" "}
-                                    <span>Product overview</span>{" "}
-                                    <span>
-                                      <BsArrowRight />
-                                    </span>{" "}
-                                  </Link>
-                                </li>
-                              </div>
+                              {/* Submenu */}
+                              <ul className=" ">
+                                {links.map((link, index) => {
+                                  const { sublink, title } = link;
+
+                                  // Check if the title contains the word "partials"
+                                  const isPartial = title
+                                    .toLowerCase()
+                                    .includes("partials");
+
+                                  return (
+                                    <li className="py-4" key={index}>
+                                      {isPartial ? (
+                                        // Render if the title contains "partials"
+                                        <div className="flex flex-col space-y-4 mt-3 capitalize pl-5">
+                                          {sublink.map((subLink, index) => {
+                                            const { url, icon, label } =
+                                              subLink;
+
+                                            return (
+                                              <li
+                                                className=" border-b-2 pb-1 text-green-900"
+                                                key={index}
+                                              >
+                                                <Link
+                                                  className="flex font-bold gap-2 items-center"
+                                                  to={`${url}`}
+                                                >
+                                                  {label}
+                                                  {icon}
+                                                </Link>
+                                              </li>
+                                            );
+                                          })}
+                                        </div>
+                                      ) : (
+                                        // Render if the title does not contain "partials"
+                                        <div className="flex flex-col space-y-5 mt-3 capitalize pl-5">
+                                          <div className="pb-2 pl-2 border-b-4 uppercase text-xs text-gray-400">
+                                            {title}
+                                          </div>
+                                          {sublink.map((subLink, index) => {
+                                            const { url, icon, label } =
+                                              subLink;
+
+                                            return (
+                                              <li className="" key={index}>
+                                                <Link
+                                                  className="flex gap-2 items-center"
+                                                  to={`${url}`}
+                                                >
+                                                  {icon}
+                                                  {label}
+                                                </Link>
+                                              </li>
+                                            );
+                                          })}
+                                        </div>
+                                      )}
+                                    </li>
+                                  );
+                                })}
+                              </ul>
                             </li>
-                          </ul>
-                        </li>
-                        <li className="text-base lg:text-lg  font-semibold pb-1 border-b border-b-transparent transition duration-500 hover:border-b hover:border-green-700  ">
-                          <button className=" capitalize ">
-                            <div className="flex justify-center items-center">
-                              solutions
-                              <span>
-                                <BiChevronDown />
-                              </span>
-                            </div>
-                          </button>
-
-                          {/* Submenu */}
-                          <ul className=" ">
-                            <li className="py-4  ">
-                              <div className="pb-2 pl-2 border-b-4  uppercase text-xs text-gray-400 ">
-                                what you can sell
-                              </div>
-
-                              <div className="flex flex-col space-y-5 mt-5 capitalize pl-5">
-                                <li to={"/"}>
-                                  <Link>Online courses</Link>
-                                </li>
-                                <li to={"/"}>
-                                  <Link>Coaching </Link>
-                                </li>
-                                <li to={"/"}>
-                                  <Link>Digital Downloads</Link>
-                                </li>
-                                <li to={"/"}>
-                                  <Link>Entrerprenuer</Link>
-                                </li>
-                                <li
-                                  to={"/"}
-                                  className=" font-bold border-b-2 pb-1 text-green-900"
-                                >
-                                  <Link
-                                    to={"/"}
-                                    className="flex space-x-2  items-center"
-                                  >
-                                    {" "}
-                                    <span>Product overview</span>{" "}
-                                    <span>
-                                      <BsArrowRight />
-                                    </span>{" "}
-                                  </Link>
-                                </li>
-                              </div>
-                            </li>
-                          </ul>
-                        </li>
-                        <li className="text-base lg:text-lg  font-semibold pb-1 border-b border-b-transparent transition duration-500 hover:border-b hover:border-green-700  ">
-                          <button className=" capitalize ">
-                            <div className="flex justify-center items-center">
-                              resources
-                              <span>
-                                <BiChevronDown />
-                              </span>
-                            </div>
-                          </button>
-
-                          {/* Submenu */}
-                          <ul className=" ">
-                            <li className="py-4  ">
-                              <div className="pb-2 pl-2 border-b-4  uppercase text-xs text-gray-400 ">
-                                what you can sell
-                              </div>
-
-                              <div className="flex flex-col space-y-5 mt-5 capitalize pl-5">
-                                <li to={"/"}>
-                                  <Link>Online courses</Link>
-                                </li>
-                                <li to={"/"}>
-                                  <Link>Coaching </Link>
-                                </li>
-                                <li to={"/"}>
-                                  <Link>Digital Downloads</Link>
-                                </li>
-                                <li to={"/"}>
-                                  <Link>Entrerprenuer</Link>
-                                </li>
-                                <li
-                                  to={"/"}
-                                  className=" font-bold border-b-2 pb-1 text-green-900"
-                                >
-                                  <Link
-                                    to={"/"}
-                                    className="flex space-x-2  items-center"
-                                  >
-                                    {" "}
-                                    <span>Product overview</span>{" "}
-                                    <span>
-                                      <BsArrowRight />
-                                    </span>{" "}
-                                  </Link>
-                                </li>
-                              </div>
-                            </li>
-                          </ul>
-                        </li>
-
-                        <li className="text-base lg:text-lg  font-semibold pb-1 border-b border-b-transparent transition duration-500 hover:border-b hover:border-green-700  ">
-                          <button className=" capitalize ">
-                            <div className="flex justify-center items-center">
-                              pricing
-                              <span>
-                                <BiChevronDown />
-                              </span>
-                            </div>
-                          </button>
-                        </li>
+                          );
+                        })}
                       </ul>
                     </div>
                   </div>
@@ -238,9 +194,12 @@ const Header = () => {
               <div className="">
                 <ul className="flex items-center space-x-6 lg:space-x-14 ">
                   <li className="relative text-base lg:text-lg  font-semibold pb-1 border-b border-b-transparent transition duration-500 hover:border-b hover:border-green-700  ">
-                    <button className=" capitalize ">
-                      <div className="flex justify-center items-center">
-                        product
+                    <button
+                      className=" capitalize  "
+                      onMouseOver={displaySubmenu}
+                    >
+                      <div className="flex justify-center items-center ">
+                        products
                         <span>
                           <BiChevronDown />
                         </span>
@@ -248,143 +207,92 @@ const Header = () => {
                     </button>
 
                     {/* Submenu */}
-                    <ul className=" absolute top-10 left-0 z-50 w-max max-w-max  p-5  bg-white">
+                    <ul
+                      ref={container}
+                      className={`${
+                        isSubmenuOpen
+                          ? "absolute top-10 left-0 z-50 w-max max-w-max  p-5  bg-white"
+                          : "hidden"
+                      }`}
+                    >
                       <li className="py-4 grid grid-cols-2 gap-8 ">
                         {/* Sub menu menu */}
-                        <div>
-                          {/* Sub menu menu titile */}
-                          <div className="pb-2 pl-2 border-b-4  uppercase text-xs text-gray-400 ">
-                            what you can sell
-                          </div>
-                          {/* Sub menu menu list */}
-                          <div className="">
-                            <div className="mt-5 capitalize pl-5 grid grid-cols-2 gap-4">
-                              <li
-                                to={"/"}
-                                className="p-2 rounded-md hover:bg-green-200"
-                              >
-                                <Link>Online courses</Link>
-                              </li>
-                              <li
-                                to={"/"}
-                                className="p-2 rounded-md hover:bg-green-200"
-                              >
-                                <Link>Coaching </Link>
-                              </li>
-                              <li
-                                to={"/"}
-                                className="p-2 rounded-md hover:bg-green-200"
-                              >
-                                <Link>Digital Downloads</Link>
-                              </li>
-                              <li
-                                to={"/"}
-                                className="p-2 rounded-md hover:bg-green-200"
-                              >
-                                <Link>Entrerprenuer</Link>
-                              </li>
-                              <li
-                                to={"/"}
-                                className="p-2 rounded-md hover:bg-green-200"
-                              >
-                                <Link>Training</Link>
-                              </li>
-                              <li
-                                to={"/"}
-                                className="p-2 rounded-md hover:bg-green-200"
-                              >
-                                <Link>kiddies</Link>
-                              </li>
+                        {pageLinks.map((link, index) => {
+                          const { title, sublink } = link;
+
+                          const isPartialSub = title
+                            .toLowerCase()
+                            .includes("partials");
+
+                          return (
+                            <div key={index}>
+                              {isPartialSub ? (
+                                <div className="mt-3 capitalize pl-5 grid grid-cols-2 gap-4">
+                                  {sublink.map((subLink, index) => {
+                                    const { url, icon, label } = subLink;
+
+                                    return (
+                                      <li
+                                        to={"/"}
+                                        key={index}
+                                        className="pl-5  font-bold border-b-2 pb-1 text-green-900"
+                                      >
+                                        <Link
+                                          className="flex space-x-2  items-center"
+                                          to={`${url}`}
+                                        >
+                                          {label}
+
+                                          {icon}
+                                        </Link>
+                                      </li>
+                                    );
+                                  })}
+                                </div>
+                              ) : (
+                                <div>
+                                  {/* Sub menu menu titile */}
+                                  <div className="pb-2 pl-2 border-b-4  uppercase text-xs text-gray-400 ">
+                                    {title}
+                                  </div>
+                                  {/* Sub menu menu list */}
+                                  <div className="">
+                                    <div className="mt-5 capitalize pl-5 grid grid-cols-2 gap-4">
+                                      {sublink.map((subLink, index) => {
+                                        const { url, icon, label } = subLink;
+
+                                        return (
+                                          <li
+                                            to={"/"}
+                                            key={index}
+                                            className="p-2 rounded-md hover:bg-green-200"
+                                          >
+                                            <Link
+                                              className="flex gap-4  items-center"
+                                              to={`${url}`}
+                                            >
+                                              {icon}
+
+                                              {label}
+                                            </Link>
+                                          </li>
+                                        );
+                                      })}
+                                    </div>
+                                  </div>
+                                </div>
+                              )}
                             </div>
-
-                            {/* Sub menu partials */}
-                            <li
-                              to={"/"}
-                              className="pl-5 mt-5 font-bold border-b-2 pb-1 text-green-900"
-                            >
-                              <Link
-                                to={"/"}
-                                className="flex space-x-2  items-center"
-                              >
-                                {" "}
-                                <span>Product overview</span>{" "}
-                                <span>
-                                  <BsArrowRight />
-                                </span>{" "}
-                              </Link>
-                            </li>
-                          </div>
-                        </div>
-
-                        {/* Sub menu menu */}
-                        <div>
-                          {/* Sub menu menu titile */}
-                          <div className="pb-2 pl-2 border-b-4  uppercase text-xs text-gray-400 ">
-                            what you can sell
-                          </div>
-                          {/* Sub menu menu list */}
-                          <div className="">
-                            <div className="mt-5 capitalize pl-5 grid grid-cols-2 gap-4">
-                              <li
-                                to={"/"}
-                                className="p-2 rounded-md hover:bg-green-200"
-                              >
-                                <Link>Online courses</Link>
-                              </li>
-                              <li
-                                to={"/"}
-                                className="p-2 rounded-md hover:bg-green-200"
-                              >
-                                <Link>Coaching </Link>
-                              </li>
-                              <li
-                                to={"/"}
-                                className="p-2 rounded-md hover:bg-green-200"
-                              >
-                                <Link>Digital Downloads</Link>
-                              </li>
-                              <li
-                                to={"/"}
-                                className="p-2 rounded-md hover:bg-green-200"
-                              >
-                                <Link>Entrerprenuer</Link>
-                              </li>
-                              <li
-                                to={"/"}
-                                className="p-2 rounded-md hover:bg-green-200"
-                              >
-                                <Link>Training</Link>
-                              </li>
-                              <li
-                                to={"/"}
-                                className="p-2 rounded-md hover:bg-green-200"
-                              >
-                                <Link>kiddies</Link>
-                              </li>
-                            </div>
-
-                            <li
-                              to={"/"}
-                              className="pl-5 mt-5 font-bold border-b-2 pb-1 text-green-900"
-                            >
-                              <Link
-                                to={"/"}
-                                className="flex space-x-2  items-center"
-                              >
-                                {" "}
-                                <span>Product overview</span>{" "}
-                                <span>
-                                  <BsArrowRight />
-                                </span>{" "}
-                              </Link>
-                            </li>
-                          </div>
-                        </div>
+                          );
+                        })}
                       </li>
                     </ul>
                   </li>
                   <li className="text-base lg:text-lg  font-semibold pb-1 border-b border-b-transparent transition duration-500 hover:border-b hover:border-green-700  ">
-                    <button className=" capitalize ">
+                    <button
+                      className=" capitalize "
+                      onMouseOver={displaySubmenu}
+                    >
                       <div className="flex justify-center items-center">
                         solutions
                         <span>
@@ -394,7 +302,10 @@ const Header = () => {
                     </button>
                   </li>
                   <li className="text-base lg:text-lg  font-semibold pb-1 border-b border-b-transparent transition duration-500 hover:border-b hover:border-green-700  ">
-                    <button className=" capitalize ">
+                    <button
+                      className=" capitalize "
+                      onMouseOver={displaySubmenu}
+                    >
                       <div className="flex justify-center items-center">
                         resources
                         <span>
@@ -405,7 +316,10 @@ const Header = () => {
                   </li>
 
                   <li className="text-base lg:text-lg  font-semibold pb-1 border-b border-b-transparent transition duration-500 hover:border-b hover:border-green-700  ">
-                    <button className=" capitalize ">
+                    <button
+                      className=" capitalize "
+                      onMouseOver={displaySubmenu}
+                    >
                       <div className="flex justify-center items-center">
                         pricing
                         <span>
