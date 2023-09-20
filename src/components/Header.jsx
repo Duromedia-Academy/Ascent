@@ -68,7 +68,7 @@ const Header = () => {
                 <div className="relative h-full  w-full right-0 ">
                   <div className="bg-black overflow-y-scroll bg-blend-overlay opacity-[0.96] absolute w-full h-full z-30 p-10 ">
                     <div className="relative ">
-                      <ul className="absolute h-screen p-5  top-0 z-50 bg-white flex flex-col items-start space-y-6  w-full bg-white py-10 ">
+                      <ul className="absolute h-max min-h-max p-5  top-0 z-50 bg-white flex flex-col items-start space-y-6  w-full bg-white py-10 ">
                         <li className="text-base lg:text-lg w-full font-semibold pb-1 border-b border-b-transparent transition duration-500 lg:hover:border-b lg:hover:border-green-700  ">
                           <button className=" capitalize ">
                             <div className="flex justify-center items-center">
@@ -265,19 +265,34 @@ const Header = () => {
                               >
                                 <Link>Online courses</Link>
                               </li>
-                              <li to={"/"}     className="p-2 rounded-md hover:bg-green-200">
+                              <li
+                                to={"/"}
+                                className="p-2 rounded-md hover:bg-green-200"
+                              >
                                 <Link>Coaching </Link>
                               </li>
-                              <li to={"/"}     className="p-2 rounded-md hover:bg-green-200">
+                              <li
+                                to={"/"}
+                                className="p-2 rounded-md hover:bg-green-200"
+                              >
                                 <Link>Digital Downloads</Link>
                               </li>
-                              <li to={"/"}     className="p-2 rounded-md hover:bg-green-200">
+                              <li
+                                to={"/"}
+                                className="p-2 rounded-md hover:bg-green-200"
+                              >
                                 <Link>Entrerprenuer</Link>
                               </li>
-                              <li to={"/"}     className="p-2 rounded-md hover:bg-green-200">
+                              <li
+                                to={"/"}
+                                className="p-2 rounded-md hover:bg-green-200"
+                              >
                                 <Link>Training</Link>
                               </li>
-                              <li to={"/"}     className="p-2 rounded-md hover:bg-green-200">
+                              <li
+                                to={"/"}
+                                className="p-2 rounded-md hover:bg-green-200"
+                              >
                                 <Link>kiddies</Link>
                               </li>
                             </div>
@@ -310,22 +325,40 @@ const Header = () => {
                           {/* Sub menu menu list */}
                           <div className="">
                             <div className="mt-5 capitalize pl-5 grid grid-cols-2 gap-4">
-                              <li to={"/"}    className="p-2 rounded-md hover:bg-green-200">
+                              <li
+                                to={"/"}
+                                className="p-2 rounded-md hover:bg-green-200"
+                              >
                                 <Link>Online courses</Link>
                               </li>
-                              <li to={"/"}    className="p-2 rounded-md hover:bg-green-200">
+                              <li
+                                to={"/"}
+                                className="p-2 rounded-md hover:bg-green-200"
+                              >
                                 <Link>Coaching </Link>
                               </li>
-                              <li to={"/"}    className="p-2 rounded-md hover:bg-green-200">
+                              <li
+                                to={"/"}
+                                className="p-2 rounded-md hover:bg-green-200"
+                              >
                                 <Link>Digital Downloads</Link>
                               </li>
-                              <li to={"/"}    className="p-2 rounded-md hover:bg-green-200">
+                              <li
+                                to={"/"}
+                                className="p-2 rounded-md hover:bg-green-200"
+                              >
                                 <Link>Entrerprenuer</Link>
                               </li>
-                              <li to={"/"}    className="p-2 rounded-md hover:bg-green-200">
+                              <li
+                                to={"/"}
+                                className="p-2 rounded-md hover:bg-green-200"
+                              >
                                 <Link>Training</Link>
                               </li>
-                              <li to={"/"}    className="p-2 rounded-md hover:bg-green-200">
+                              <li
+                                to={"/"}
+                                className="p-2 rounded-md hover:bg-green-200"
+                              >
                                 <Link>kiddies</Link>
                               </li>
                             </div>

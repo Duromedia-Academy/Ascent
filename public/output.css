@@ -926,6 +926,11 @@ video {
   height: 100vh;
 }
 
+.h-max {
+  height: -webkit-max-content;
+  height: max-content;
+}
+
 .min-h-\[45vh\] {
   min-height: 45vh;
 }
@@ -940,6 +945,11 @@ video {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-max {
+  min-height: -webkit-max-content;
+  min-height: max-content;
 }
 
 .w-14 {
