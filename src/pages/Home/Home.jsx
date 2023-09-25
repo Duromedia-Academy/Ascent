@@ -1,4 +1,3 @@
-
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 
@@ -68,7 +67,7 @@ const Home = () => {
                     </button>
                   </div>
                 </form>
-                <p className="   text-lg lg:text-xl pt-2">
+                <p className="   text-base pt-2">
                   *By submitting your email address, you agree to Teachable's{" "}
                   <Link href="#/" className=" underline">
                     Terms of use
@@ -88,7 +87,6 @@ const Home = () => {
                 speed={1500}
                 spaceBetween={30}
                 loop={true}
-                // navigation={false}
                 showsPagination={false}
                 autoplay={{
                   delay: 2000,
@@ -97,7 +95,6 @@ const Home = () => {
                   stopOnLastSlide: false,
                   waitForTransition: true,
                 }}
-                // pagination={false}
                 modules={[Autoplay]}
                 className="h-full w-full "
               >
@@ -143,7 +140,7 @@ const Home = () => {
             </div>
             {/* Content side */}
             <div className=" space-y-7 order-1 lg:order-2" data-aos="fade-left">
-              <h2 className=" text-4xl lg:text-5xl xl:text-6xl font-bold text-primary-color ">
+              <h2 className=" text-4xl lg:text-5xl xl:text-6xl font-GothamMedium font-bold text-primary-color ">
                 Escape the algorithm
               </h2>
               <p className=" text-lg lg:text-xl ">
@@ -506,7 +503,7 @@ const Home = () => {
       <section className="py-14 lg:py-20 bg-secondary-color/10  text-black px-6 lg:px-10">
         <div className="max-w-3xl lg:max-w-6xl mx-auto ">
           {/* Title */}
-          <div className="space-y-6    pb-10" data-aos= "fade-in">
+          <div className="space-y-6    pb-10" data-aos="fade-in">
             <h3 className="text-primary-color   font-bold text-4xl lg:text-5xl">
               Need help fast?
             </h3>

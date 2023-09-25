@@ -3,7 +3,7 @@ const Carousel = ({ title, description, image, name }) => {
   
 
         <div className="">
-          <div className=" flex flex-col lg:flex-row lg:flex-row-reverse  text-white ">
+          <div className=" flex flex-col lg:flex-row-reverse  text-white ">
             <div className="lg:flex-[75%] text-left px-3 md:px-0">
               <p className=" text-xl lg:text-2xl leading-8 font-medium py-8 ">
                 <svg
