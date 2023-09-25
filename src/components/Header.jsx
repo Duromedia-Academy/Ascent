@@ -10,6 +10,7 @@ import { IoCloseSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "./context";
 import useMediaQuery from "./useMediaQuery";
+import { images } from "../constants";
 
 import sublinks from "./data";
 
@@ -28,10 +29,7 @@ const Header = () => {
     location,
   } = useGlobalContext();
 
-  //   const handleSubmenu = (e) => {
-  // if (!e.target.classList.contains('link-btn')) {
-  //   closeSubmenu();
-  // }
+
 
   // Memoize pageLinks to prevent unnecessary re-renders
   const pageLinks = useMemo(() => (page ? page.links : []), [page]);
@@ -46,18 +44,24 @@ const Header = () => {
   };
 
   return (
-    <nav className="  border-b border-black py-5 px-10 relative  ">
-      <div className=" ">
+    <nav className="  border-b border-black py-5 px-6 lg:px-10 relative  ">
+      <div className=" max-w-9xl mx-auto ">
         <div
-          className={`${
+          className={`flex ${
             !isAboveSmallScreens
-              ? " flex justify-between items-center"
-              : "flex  items-center gap-16 lg:gap-20 "
+              ? "  justify-between items-center"
+              : "items-center gap-16 lg:gap-20 "
           }`}
         >
           <div className="">
             <a href="/" className="font-bold">
-              <h1 className="text-3xl lg:text-3xl xl:text-5xl">Ascent</h1>
+              <h1 className="text-3xl lg:text-3xl xl:text-5xl">
+                <img
+                  className="w-[150px] lg:w-[200px] "
+                  src={images.ascentLogo}
+                  alt=""
+                />
+              </h1>
             </a>
           </div>
 
@@ -81,17 +85,17 @@ const Header = () => {
               <div
                 className={`${
                   isSidebarOpen
-                    ? "fixed   top-0 w-full h-full right-0 z-10"
-                    : "hidden"
+                    ? "fixed top-0 w-full h-full right-0 z-10 transform scale-100 transition-transform duration-700"
+                    : "hidden transform scale-0 transition-transform duration-700"
                 }`}
               >
                 <div className="relative h-full  w-full right-0 ">
                   <div
-                    className={`bg-black overflow-y-scroll bg-blend-overlay  opacity-[0.96] absolute w-full h-full z-30 p-10 transition-transform duration-500  ${
+                    className={`${
                       isSidebarOpen
-                        ? "scale-100"
-                        : ""
-                    }  `}
+                        ? "transform scale-100 transition-transform duration-500"
+                        : "transform scale-0 transition-transform duration-500"
+                    } bg-black overflow-y-scroll bg-blend-overlay opacity-[0.96] absolute w-full h-full z-30 p-10`}
                   >
                     <div className="relative ">
                       <ul className="absolute h-max min-h-max p-5  top-0 z-50 flex flex-col items-start space-y-6  w-full bg-white py-10 ">
@@ -333,13 +337,14 @@ const Header = () => {
 
               <div className="flex  justify-center items-center space-x-4 ">
                 <Link to={"/"}>
-                  <button className="pb-1 border-b-4  transition duration-500 hover:border-green-900 border-black  text-sm lg:text-base  font-bold capitalize  ">
+                  <button className="text-base font-bold self-start  block  relative after:content-[''] after:absolute before:absolute  before:w-full before:h-0.5 before:bg-primary-color  before:-bottom-0.5 after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5">
+                 
                     Creator login
                   </button>
                 </Link>
                 <Link to={"/"}>
-                  <button className="py-5 px-6 rounded-md text-white bg-gap text-sm  lg:text-base font-bold capitalize ">
-                    Start for free
+                  <button className=" bg-secondary-color text-white hover:bg-secondary-color/60 capitalize text-base  transition-colors duration-700   py-4 px-5 font-semibold  rounded-md">
+                    start for free
                   </button>
                 </Link>
               </div>

@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+  font-family: "Gotham-Bold";
+  src: local("Gotham-Bold"),
+   url("./font/gotham/CarneroBold.ttf") format("truetype");
+  /* font-weight: bold; */
+ }
+@font-face {
+  font-family: "Gotham-Light";
+  src: local("Gotham-Light"),
+   url("./font/gotham/GothamLight.ttf") format("truetype");
+  /* font-weight: bold; */
+ }
+ @font-face {
+  font-family: "Gotham-Medium";
+  src: local("Gotham-Medium"),
+   url("./font/gotham/GothamMedium.ttf") format("truetype");
+  /* font-weight: bold; */
+ }
+
+  body{
+  @apply font-GothamLight
+ }
+
+/* target home slider section seven bullets */
+#homeSec7 span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  @apply bg-secondary-color ;
+}
+#homeSec7  .swiper-pagination-bullet {
+ @apply bg-secondary-color ;
+}
+

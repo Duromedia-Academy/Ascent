@@ -1,32 +1,49 @@
-import { useState, useEffect } from "react";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
-import "./input.css";
+import "./App.css";
+import { Footer, Header } from "./components";
+import { Home } from "./pages";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
-import "./font/gotham/GothamBlack.otf";
-import "./font/gotham/GothamBold.otf";
-import "./font/gotham/GothamLight.ttf";
 
-import { Home2 } from "./containers";
-import { Header, Footer } from "./components";
 
-import { Routes, Route } from "react-router-dom";
-
-function App() {
+const Layout = () => {
   return (
-    <div className="App">
+    <>
       <div className="">
         <Header />
       </div>
-      <div>
-        <Routes>
-          <Route path="/" element={<Home2 />} />
-        </Routes>
+
+      <div className="">
+        <Outlet />
       </div>
-      <div>
-        <Footer />
-      </div>
-    </div>
+      <Footer />
+    </>
+  );
+};
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+    ],
+  },
+]);
+
+function App() {
+  return (
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 }
+
+
 
 export default App;

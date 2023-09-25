@@ -2,7 +2,7 @@ import { FaCreditCard, FaBook, FaBriefcase } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
 import React from "react";
 const sublinks = [
-  // product
+
   {
     page: "products",
     links: [
