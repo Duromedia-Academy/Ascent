@@ -37,7 +37,7 @@ const Home = () => {
 
   return (
     <div className=" " onMouseOver={closeSubmenu}>
-      <section className="py-14 lg:py-20 px-6 lg:px-10">
+      <section className="py-14 lg:py-20 xl:py-28 px-6 lg:px-10">
         <div className=" max-w-3xl lg:max-w-6xl mx-auto " data-aos="fade-up">
           <div className=" grid grid-cols-1  lg:grid-cols-2 lg:place-content-center  gap-14 ">
             {/* Content side */}
@@ -125,56 +125,67 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-14 lg:py-20  bg-secondary-color/40 px-6 lg:px-10">
+      <section className="py-14 lg:py-20 xl:py-28 bg-secondary-color/40 px-6 lg:px-10">
         <div className="max-w-3xl lg:max-w-6xl mx-auto ">
           <div className=" grid grid-cols-1 lg:grid-cols-2 gap-14  md:place-content-center md:place-items-center">
             {/* Image side */}
-            <div className=" order-2 lg:order-1 " data-aos="fade-right">
-              <div>
-                <img src={images.homeSec2img1} alt="" className=" max-w-full" />
-              </div>
-              <div className="flex  items-center gap-3  ">
-                <p className="text-base ">Learn more about Teachable</p>
-                <BiSolidRightArrow className=" text-lg text-secondary-color" />
+
+            <div data-aos="fade-right">
+              <div className=" order-2 lg:order-1 ">
+                <div>
+                  <img
+                    src={images.homeSec2img1}
+                    alt=""
+                    className=" max-w-full"
+                  />
+                </div>
+                <div className="flex  items-center gap-3  ">
+                  <p className="text-base ">Learn more about Teachable</p>
+                  <BiSolidRightArrow className=" text-lg text-secondary-color" />
+                </div>
               </div>
             </div>
-            {/* Content side */}
-            <div className=" space-y-7 order-1 lg:order-2" data-aos="fade-left">
-              <h2 className=" text-4xl lg:text-5xl xl:text-6xl font-GothamMedium font-bold text-primary-color ">
-                Escape the algorithm
-              </h2>
-              <p className=" text-lg lg:text-xl ">
-                Teachable is a no-code platform for creators who want to build
-                more impactful businesses through courses, coaching, and digital
-                downloads. Whether you’re going viral on TikTok or bringing your
-                in-person classes online, with Teachable you own your content
-                and your students’ experience.
-              </p>
 
-              <div className=" ">
-                <button className=" bg-secondary-color text-white hover:bg-secondary-color/60 capitalize text-base  transition-colors duration-700   py-4 px-5 font-semibold  rounded-md">
-                  start for free
-                </button>
+            {/* Content side */}
+
+            <div data-aos="fade-left">
+              <div className=" space-y-7 order-1 lg:order-2">
+                <h2 className=" text-4xl lg:text-5xl xl:text-6xl font-GothamMedium font-bold text-primary-color ">
+                  Escape the algorithm
+                </h2>
+                <p className=" text-lg lg:text-xl ">
+                  Teachable is a no-code platform for creators who want to build
+                  more impactful businesses through courses, coaching, and
+                  digital downloads. Whether you’re going viral on TikTok or
+                  bringing your in-person classes online, with Teachable you own
+                  your content and your students’ experience.
+                </p>
+
+                <div className=" ">
+                  <button className=" bg-secondary-color text-white hover:bg-secondary-color/60 capitalize text-base  transition-colors duration-700   py-4 px-5 font-semibold  rounded-md">
+                    start for free
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-14 lg:py-20  px-6 lg:px-10 bg-secondary-color/10">
+      <section className="py-14 lg:py-20  xl:py-28 px-6 lg:px-10 bg-secondary-color/10">
         <div className="max-w-3xl lg:max-w-6xl mx-auto ">
           {/* Title  */}
-          <div
-            className=" text-center space-y-6 max-w-4xl mx-auto pb-10"
-            data-aos="fade-up"
-          >
-            <h3 className="font-bold  text-4xl lg:text-5xl ">
-              Three ways to sell
-            </h3>
-            <p className=" text-lg  xl:text-xl ">
-              There’s no all-in-one formula for success as a creator. That’s why
-              we let you choose how to build your business.
-            </p>
+
+          <div data-aos="fade-up">
+            <div className=" text-center space-y-6 max-w-4xl mx-auto pb-10">
+              <h3 className="font-bold  text-4xl lg:text-5xl ">
+                Three ways to sell
+              </h3>
+              <p className=" text-lg  xl:text-xl ">
+                There’s no all-in-one formula for success as a creator. That’s
+                why we let you choose how to build your business.
+              </p>
+            </div>
           </div>
 
           {/* Content  */}
@@ -269,7 +280,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-14 lg:py-20 bg-primary-color text-white px-6 lg:px-10">
+      <section className="py-14 lg:py-20 xl:py-28 bg-primary-color text-white px-6 lg:px-10">
         <div className="max-w-3xl lg:max-w-6xl mx-auto " data-aos="fade-up">
           <div className=" grid grid-cols-1 lg:grid-cols-2 gap-14  md:place-content-center md:place-items-center">
             {/* Content 1 side */}
@@ -326,20 +337,20 @@ const Home = () => {
         </div>
       </section>
 
-      <section className=" py-14 lg:py-20 px-6 lg:px-10 bg-secondary-color/[0.02]">
+      <section className=" py-14 lg:py-20 xl:py-28 px-6 lg:px-10 bg-secondary-color/[0.02]">
         <div className="max-w-3xl lg:max-w-6xl mx-auto ">
           {/* Title */}
-          <div
-            className=" text-center space-y-6 max-w-4xl  mx-auto pb-10"
-            data-aos="fade-up"
-          >
-            <h3 className="text-secondary-color px-10  font-bold text-4xl lg:text-5xl">
-              Less stress. More results.
-            </h3>
-            <p className=" text-lg lg:text-xl ">
-              The tools you need to build, grow, and manage a thriving knowledge
-              business are right here. Get started in three simple steps.
-            </p>
+          <div data-aos="fade-up">
+            <div className=" text-center space-y-6 max-w-4xl  mx-auto pb-10">
+              <h3 className="text-secondary-color px-10  font-bold text-4xl lg:text-5xl">
+                Less stress. More results.
+              </h3>
+              <p className=" text-lg lg:text-xl ">
+                The tools you need to build, grow, and manage a thriving
+                knowledge business are right here. Get started in three simple
+                steps.
+              </p>
+            </div>
           </div>
 
           {/* Content  */}
@@ -377,7 +388,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-14 lg:py-20 bg-primary-color text-white px-6 lg:px-10">
+      <section className="py-14 lg:py-20 xl:py-28 bg-primary-color text-white px-6 lg:px-10">
         <div className="max-w-3xl lg:max-w-6xl mx-auto ">
           {/* Title */}
           <div className=" text-center space-y-6 max-w-3xl  mx-auto pb-10">
@@ -500,18 +511,22 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-14 lg:py-20 bg-secondary-color/10  text-black px-6 lg:px-10">
+      <section className="py-14 lg:py-20 xl:py-28 bg-secondary-color/10  text-black px-6 lg:px-10">
         <div className="max-w-3xl lg:max-w-6xl mx-auto ">
           {/* Title */}
-          <div className="space-y-6    pb-10" data-aos="fade-in">
-            <h3 className="text-primary-color   font-bold text-4xl lg:text-5xl">
-              Need help fast?
-            </h3>
-            <p className=" text-lg  xl:text-xl ">
-              Every big creator had to start somewhere. Our support resources
-              are the launch pad you need to succeed.
-            </p>
+
+          <div className="py-3" data-aos="fade-in">
+            <div className="space-y-6    pb-10">
+              <h3 className="text-primary-color   font-bold text-4xl lg:text-5xl">
+                Need help fast?
+              </h3>
+              <p className=" text-lg  xl:text-xl ">
+                Every big creator had to start somewhere. Our support resources
+                are the launch pad you need to succeed.
+              </p>
+            </div>
           </div>
+
           <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 mt-10 ">
             <div className=" space-y-8  bg-white p-5 border-t-8 border-primary-color ">
               <div className="">
@@ -584,7 +599,7 @@ const Home = () => {
         <div className="max-w-3xl lg:max-w-6xl mx-auto " data-aos="fade-up">
           <div className="">
             <Swiper
-              modules={[Pagination, EffectFade, Navigation, A11y]}
+              modules={[Pagination, Autoplay, EffectFade, Navigation, A11y]}
               onBeforeInit={(swiper) => {
                 swiperRef.current = swiper;
               }}
@@ -593,6 +608,14 @@ const Home = () => {
               pagination={{
                 el: ".custom-pagination",
                 clickable: true,
+              }}
+              loop={true}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+                stopOnLastSlide: false,
+                waitForTransition: true,
               }}
               slidesPerView={1}
               effect="crossfade"
@@ -664,9 +687,9 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-14 lg:py-20  bg-secondary-color px-6 lg:px-10">
-        <div className="max-w-3xl lg:max-w-6xl mx-auto " data-aos="fade-up">
-          <div className=" text-center space-y-2 ">
+      <section className="py-14 lg:py-20 xl:py-28  bg-secondary-color px-6 lg:px-10">
+        <div className="max-w-3xl lg:max-w-6xl mx-auto ">
+          <div className=" text-center space-y-2 " data-aos="fade-up">
             <h2 className="  font-bold text-3xl lg:text-5xl ">
               Change your future
             </h2>
