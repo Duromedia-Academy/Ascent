@@ -207,7 +207,7 @@ const Home = () => {
 
                 <div className="flex self-start ">
                   <Link href="#" className="text-base ">
-                    <div className="font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5">
+                    <div className="font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5 text-black">
                       Learn more
                     </div>
                   </Link>
@@ -235,7 +235,7 @@ const Home = () => {
 
                 <div className="flex self-start ">
                   <Link href="#" className="text-base ">
-                    <div className="font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5">
+                    <div className="font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5 text-black">
                       Learn more
                     </div>
                   </Link>
@@ -263,7 +263,7 @@ const Home = () => {
 
                 <div className="flex self-start ">
                   <Link href="#" className="text-base ">
-                    <div className="font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5">
+                    <div className="font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5 text-black">
                       Learn more
                     </div>
                   </Link>
@@ -292,7 +292,7 @@ const Home = () => {
               </p>
               <div className=" pt-5 flex justify-start ">
                 <Link href="#/" className="text-base ">
-                  <div className="font-semibold self-start border-b-[3px] border-b-secondary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5">
+                  <div className="font-semibold self-start border-b-[3px] border-b-secondary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5 text-white">
                     View all plans
                   </div>
                 </Link>
@@ -534,7 +534,7 @@ const Home = () => {
               </div>
               <div className="  relative  mt-10 flex ">
                 <Link href="#" className="text-base ">
-                  <div className="font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5">
+                  <div className="font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5 text-black">
                     Learn more
                   </div>
                 </Link>
@@ -553,7 +553,7 @@ const Home = () => {
               </div>
               <div className="  relative  mt-10 flex ">
                 <Link href="#" className="text-base ">
-                  <div className="font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5">
+                  <div className="font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5 text-black">
                     Learn more
                   </div>
                 </Link>
@@ -572,7 +572,7 @@ const Home = () => {
               </div>
               <div className="  relative  mt-10 flex ">
                 <Link href="#" className="text-base ">
-                  <div className="font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5">
+                  <div className="font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5 text-black">
                     Learn more
                   </div>
                 </Link>

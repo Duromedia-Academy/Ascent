@@ -335,7 +335,7 @@ const Header = () => {
 
               <div className="flex  justify-center items-center space-x-4 ">
                 <Link to={"/"}>
-                  <button className="text-base font-bold self-start  block  relative after:content-[''] after:absolute before:absolute  before:w-full before:h-0.5 before:bg-primary-color  before:-bottom-0.5 after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5">
+                  <button className="text-base font-bold self-start  block  relative after:content-[''] after:absolute before:absolute  before:w-full before:h-0.5 before:bg-primary-color  before:-bottom-0.5 after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5 text-black">
                     Creator login
                   </button>
                 </Link>
