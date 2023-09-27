@@ -1,3 +1,26 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 
@@ -26,16 +49,19 @@ import { AiOutlineRight } from "react-icons/ai";
 import { AiOutlineLeft } from "react-icons/ai";
 import { BiSolidRightArrow } from "react-icons/bi";
 
+
+
+
 const Home = () => {
   const { closeSubmenu } = useGlobalContext();
-  const swiperRef = useRef();
+ const swiperRef = useRef();
 
-  const Aos = useAOS();
+ const Aos = useAOS();
 
   return (
     <div className=" overflow-x-hidden" onMouseOver={closeSubmenu}>
       <section className="py-14 lg:py-20 xl:py-28 px-6 lg:px-10">
-        <div className=" max-w-3xl lg:max-w-6xl mx-auto ">
+        <div className=" max-w-3xl lg:max-w-6xl mx-auto " data-aos="fade-up">
           <div className=" grid grid-cols-1  lg:grid-cols-2 lg:place-content-center  gap-14 ">
             {/* Content side */}
             <div className="space-y-6 ">
@@ -127,7 +153,7 @@ const Home = () => {
           <div className=" grid grid-cols-1 lg:grid-cols-2 gap-14  md:place-content-center md:place-items-center">
             {/* Image side */}
 
-            <div>
+            <div data-aos="fade-right">
               <div className=" order-2 lg:order-1 ">
                 <div>
                   <img
@@ -145,7 +171,7 @@ const Home = () => {
 
             {/* Content side */}
 
-            <div>
+            <div data-aos="fade-left">
               <div className=" space-y-7 order-1 lg:order-2">
                 <h2 className=" text-4xl lg:text-5xl xl:text-6xl font-GothamMedium font-bold text-primary-color ">
                   Escape the algorithm
@@ -173,7 +199,7 @@ const Home = () => {
         <div className="max-w-3xl lg:max-w-6xl mx-auto ">
           {/* Title  */}
 
-          <div>
+          <div data-aos="fade-up">
             <div className=" text-center space-y-6 max-w-4xl mx-auto pb-10">
               <h3 className="font-bold  text-4xl lg:text-5xl ">
                 Three ways to sell
@@ -206,10 +232,11 @@ const Home = () => {
                 </div>
 
                 <div className="flex self-start ">
-                  <Link href="#" className="text-base ">
-                    <div className="font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5">
-                      Learn more
-                    </div>
+                  <Link
+                    href="#"
+                    className="text-base font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5"
+                  >
+                    Learn more
                   </Link>
                 </div>
               </div>
@@ -234,10 +261,11 @@ const Home = () => {
                 </div>
 
                 <div className="flex self-start ">
-                  <Link href="#" className="text-base ">
-                    <div className="font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5">
-                      Learn more
-                    </div>
+                  <Link
+                    href="#"
+                    className="text-base font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5"
+                  >
+                    Learn more
                   </Link>
                 </div>
               </div>
@@ -262,10 +290,11 @@ const Home = () => {
                 </div>
 
                 <div className="flex self-start ">
-                  <Link href="#" className="text-base ">
-                    <div className="font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5">
-                      Learn more
-                    </div>
+                  <Link
+                    href="#"
+                    className="text-base font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5"
+                  >
+                    Learn more
                   </Link>
                 </div>
               </div>
@@ -275,7 +304,7 @@ const Home = () => {
       </section>
 
       <section className="py-14 lg:py-20 xl:py-28 bg-primary-color text-white px-6 lg:px-10">
-        <div className="max-w-3xl lg:max-w-6xl mx-auto ">
+        <div className="max-w-3xl lg:max-w-6xl mx-auto " data-aos="fade-up">
           <div className=" grid grid-cols-1 lg:grid-cols-2 gap-14  md:place-content-center md:place-items-center">
             {/* Content 1 side */}
             <div className="space-y-5 max-w-md mx-auto ">
@@ -291,10 +320,11 @@ const Home = () => {
                 your business’s changing needs.
               </p>
               <div className=" pt-5 flex justify-start ">
-                <Link href="#/" className="text-base ">
-                  <div className="font-semibold self-start border-b-[3px] border-b-secondary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5">
-                    View all plans
-                  </div>
+                <Link
+                  href="#/"
+                  className="text-base font-semibold self-start border-b-[3px] border-b-secondary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5"
+                >
+                  View all plans
                 </Link>
               </div>
             </div>
@@ -333,7 +363,7 @@ const Home = () => {
       <section className=" py-14 lg:py-20 xl:py-28 px-6 lg:px-10 bg-secondary-color/[0.02]">
         <div className="max-w-3xl lg:max-w-6xl mx-auto ">
           {/* Title */}
-          <div>
+          <div data-aos="fade-up">
             <div className=" text-center space-y-6 max-w-4xl  mx-auto pb-10">
               <h3 className="text-secondary-color px-10  font-bold text-4xl lg:text-5xl">
                 Less stress. More results.
@@ -348,7 +378,7 @@ const Home = () => {
 
           {/* Content  */}
           <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-lg sm:max-w-xl lg:max-w-6xl mx-auto  place-items-center mt-10 gap-14 ">
-            <div className="">
+            <div className="" data-aos="flip-left">
               <h2 className=" border-b-2 border-black pb-2 text-3xl"> 1</h2>
               <h3 className=" py-6 text-xl md:text-2xl">Prep your content</h3>
               <p className=" text-base  lg:text-lg">
@@ -356,7 +386,7 @@ const Home = () => {
                 digital product you’d like to upload and sell.
               </p>
             </div>
-            <div className="">
+            <div className="" data-aos="flip-right">
               <h2 className=" border-b-2 border-black pb-2 text-3xl"> 2</h2>
               <h3 className=" py-6 text-xl md:text-2xl">Prep your content</h3>
               <p className=" text-base  lg:text-lg">
@@ -364,7 +394,7 @@ const Home = () => {
                 digital product you’d like to upload and sell.
               </p>
             </div>
-            <div className="">
+            <div className="" data-aos="flip-left">
               <h2 className=" border-b-2 border-black pb-2 text-3xl"> 3</h2>
               <h3 className=" py-6 text-xl md:text-2xl">Prep your content</h3>
               <p className=" text-base  lg:text-lg">
@@ -397,10 +427,10 @@ const Home = () => {
           {/* Content */}
           <div className=" max-w-3xl xl:max-w-6xl mx-auto mt-10 space-y-10 ">
             <div className=" grid grid-cols-1 xl:grid-cols-2 gap-14 place-items-center  pb-16">
-              <div className="max-w-xl mx-auto ">
+              <div className="max-w-xl mx-auto " data-aos="zoom-in">
                 <img src={images.homeSec5img1} alt="" className=" " />
               </div>
-              <div className=" space-y-8 ">
+              <div className=" space-y-8 " data-aos="fade-up">
                 <div className="space-y-4">
                   <h2 className="font-semibold text-xl">
                     More than a payment gateway
@@ -430,10 +460,10 @@ const Home = () => {
               </div>
             </div>
             <div className=" grid grid-cols-1 xl:grid-cols-2 gap-14 place-items-center  pb-16">
-              <div className="max-w-xl mx-auto">
+              <div className="max-w-xl mx-auto" data-aos="zoom-in">
                 <img src={images.homeSec5img2} alt="" className=" " />
               </div>
-              <div className=" space-y-8 ">
+              <div className=" space-y-8 " data-aos="fade-up">
                 <div className="space-y-4">
                   <h2 className="font-semibold text-xl">
                     More than a payment gateway
@@ -463,10 +493,10 @@ const Home = () => {
               </div>
             </div>
             <div className=" grid grid-cols-1 xl:grid-cols-2 gap-14 place-items-center  pb-16">
-              <div className="max-w-xl mx-auto ">
+              <div className="max-w-xl mx-auto " data-aos="zoom-in">
                 <img src={images.homeSec5img3} alt="" className=" " />
               </div>
-              <div className=" space-y-8 ">
+              <div className=" space-y-8 " data-aos="fade-up">
                 <div className="space-y-4">
                   <h2 className="font-semibold text-xl">
                     More than a payment gateway
@@ -508,7 +538,7 @@ const Home = () => {
         <div className="max-w-3xl lg:max-w-6xl mx-auto ">
           {/* Title */}
 
-          <div className="py-3">
+          <div className="py-3" data-aos="fade-in">
             <div className="space-y-6    pb-10">
               <h3 className="text-primary-color   font-bold text-4xl lg:text-5xl">
                 Need help fast?
@@ -533,10 +563,11 @@ const Home = () => {
                 </p>
               </div>
               <div className="  relative  mt-10 flex ">
-                <Link href="#" className="text-base ">
-                  <div className="font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5">
-                    Learn more
-                  </div>
+                <Link
+                  href="#"
+                  className="text-base font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5"
+                >
+                  Learn more
                 </Link>
               </div>
             </div>
@@ -551,11 +582,12 @@ const Home = () => {
                   our mini course library on those topics and more.
                 </p>
               </div>
-              <div className="  relative  mt-10 flex ">
-                <Link href="#" className="text-base ">
-                  <div className="font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5">
-                    Learn more
-                  </div>
+              <div className="  relative  mt-10  flex ">
+                <Link
+                  href="#/"
+                  className="text-base font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5"
+                >
+                  Learn more
                 </Link>
               </div>
             </div>
@@ -570,11 +602,12 @@ const Home = () => {
                   our mini course library on those topics and more.
                 </p>
               </div>
-              <div className="  relative  mt-10 flex ">
-                <Link href="#" className="text-base ">
-                  <div className="font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5">
-                    Learn more
-                  </div>
+              <div className="  relative  mt-10 flex  ">
+                <Link
+                  href="#/"
+                  className="text-base font-bold self-start border-b-[3px] border-b-primary-color  block  relative after:content-[''] after:absolute after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5"
+                >
+                  Learn more
                 </Link>
               </div>
             </div>
@@ -586,7 +619,7 @@ const Home = () => {
         className="py-14 lg:py-20 bg-primary-color text-white px-6 lg:px-10"
         id="homeSec7"
       >
-        <div className="max-w-3xl lg:max-w-6xl mx-auto ">
+        <div className="max-w-3xl lg:max-w-6xl mx-auto " data-aos="fade-up">
           <div className="">
             <Swiper
               modules={[Pagination, Autoplay, EffectFade, Navigation, A11y]}
@@ -679,7 +712,7 @@ const Home = () => {
 
       <section className="py-14 lg:py-20 xl:py-28  bg-secondary-color px-6 lg:px-10">
         <div className="max-w-3xl lg:max-w-6xl mx-auto ">
-          <div className=" text-center space-y-2 ">
+          <div className=" text-center space-y-2 " data-aos="fade-up">
             <h2 className="  font-bold text-3xl lg:text-5xl ">
               Change your future
             </h2>
