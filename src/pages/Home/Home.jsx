@@ -36,7 +36,7 @@ const Home = () => {
  const Aos = useAOS();
 
   return (
-    <div className=" " onMouseOver={closeSubmenu}>
+    <div className=" overflow-x-hidden" onMouseOver={closeSubmenu}>
       <section className="py-14 lg:py-20 xl:py-28 px-6 lg:px-10">
         <div className=" max-w-3xl lg:max-w-6xl mx-auto " data-aos="fade-up">
           <div className=" grid grid-cols-1  lg:grid-cols-2 lg:place-content-center  gap-14 ">
