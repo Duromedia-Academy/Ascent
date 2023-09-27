@@ -335,9 +335,9 @@ const Header = () => {
 
               <div className="flex  justify-center items-center space-x-4 ">
                 <Link to={"/"}>
-                  <button className="text-base font-bold self-start  block  relative after:content-[''] after:absolute before:absolute  before:w-full before:h-0.5 before:bg-primary-color  before:-bottom-0.5 after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5">
-                    Creator login
-                  </button>
+                  <div className="font-bold self-start  block  relative after:content-[''] after:absolute before:absolute  before:w-full before:h-0.5 before:bg-primary-color  before:-bottom-0.5 after:-bottom-0.5 after:left-0  after:w-0 after:h-0 after:transition-all after:duration-700 after:bg-secondary-color hover:after:w-full hover:after:h-0.5">
+                    <button className="text-base ">Creator login</button>
+                  </div>
                 </Link>
                 <Link to={"/"}>
                   <button className=" bg-secondary-color text-white hover:bg-secondary-color/60 capitalize text-base  transition-colors duration-700   py-4 px-5 font-semibold  rounded-md">
