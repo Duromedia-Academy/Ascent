@@ -29,8 +29,6 @@ const Header = () => {
     closeSubmenu,
     isSubmenuOpen,
     page,
-
-    location,
   } = useGlobalContext();
 
   useEffect(() => {
@@ -50,6 +48,9 @@ const Header = () => {
 
   const displaySubmenu = (e, page) => {
     e.preventDefault();
+
+    // Add this line to prevent the click event from propagating
+    e.stopPropagation();
     // Open or close the submenu based on the current state
     if (openSubmenuName === page) {
       closeSubmenu();
@@ -108,8 +109,8 @@ const Header = () => {
               <div
                 className={`fixed  -z-[60] w-full h-full right-0 overflow-y-auto   transform  transition duration-[0.8s] bg-white ${
                   isSidebarOpen
-                    ? " translate-y-[2%]  "
-                    : "translate-y-[-1000%]  "
+                    ? " translate-y-[2%]  backface"
+                    : "translate-y-[-1000%]  backface"
                 }`}
               >
                 <div className="relative w-full h-full  ">

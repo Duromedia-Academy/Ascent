@@ -15,7 +15,7 @@ const Submenu = () => {
   }, [page, location, pageLinks]);
 
   return (
-    <div ref={container} className=" px-2 ">
+    <div ref={container}  className=" px-2 ">
       {/* Submenu */}
       <ul className={``}>
         <li className="py-4 flex gap-2 ">
