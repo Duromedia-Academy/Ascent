@@ -2,149 +2,116 @@ import { FaCreditCard, FaBook, FaBriefcase } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
 import React from "react";
 const sublinks = [
-
-  {
-    page: "products",
-    links: [
-      // 1
-      {
-        title: "WHAT YOU CAN SELL",
-        sublink: [
-          { label: "online courses", icon: <FaCreditCard />, url: "/products" },
-          { label: "coaching", icon: <FaCreditCard />, url: "/products" },
-          {
-            label: "digital downloads",
-            icon: <FaCreditCard />,
-            url: "/products",
-          },
-        ],
-      },
-
-      // 2
-      {
-        title: "feature highlights",
-        sublink: [
-          { label: "online courses", icon: <FaCreditCard />, url: "/products" },
-          { label: "coaching", icon: <FaCreditCard />, url: "/products" },
-          {
-            label: "digital downloads",
-            icon: <FaCreditCard />,
-            url: "/products",
-          },
-        ],
-      },
-
-      {
-        title: "partials",
-        sublink: [
-          {
-            label: "Product overview",
-            icon: <BsArrowRight />,
-            url: "/products",
-          },
-        ],
-      },
-    ],
-  },
-
-  // solutions
-
-  {
-    page: "solutions",
-    links: [
-      {
-        title: "BY BUSINESS STAGE",
-        sublink: [
-          { label: "online courses", icon: <FaCreditCard />, url: "/products" },
-          { label: "coaching", icon: <FaCreditCard />, url: "/products" },
-          {
-            label: "digital downloads",
-            icon: <FaCreditCard />,
-            url: "/products",
-          },
-        ],
-      },
-
-      // 2
-      {
-        title: "BY INDUSTRY",
-        sublink: [
-          { label: "online courses", icon: <FaBook />, url: "/products" },
-          { label: "coaching", icon: <FaCreditCard />, url: "/products" },
-          {
-            label: "digital downloads",
-            icon: <FaCreditCard />,
-            url: "/products",
-          },
-        ],
-      },
-    ],
-  },
-
   // resources
-
   {
-    page: "resources",
+    page: "features",
     links: [
       // 1
       {
-        title: "RESOURCES",
+        title: "",
         sublink: [
-          { label: "online courses", icon: <FaCreditCard />, url: "/products" },
-          { label: "coaching", icon: <FaCreditCard />, url: "/products" },
+          { label: "Techprenueur", icon: "", url: "" },
+          { label: "Corporate", icon: "", url: "" },
           {
-            label: "digital downloads",
-            icon: <FaCreditCard />,
-            url: "/products",
+            label: "Profiling",
+            icon: "",
+            url: "",
+          },
+          {
+            label: "Profiling",
+            icon: "",
+            url: "",
+          },
+          {
+            label: "Ascent Kids",
+            icon: "",
+            url: "",
           },
         ],
       },
 
       // 2
       {
-        title: "SUPPORT SERVICES",
+        title: "",
         sublink: [
-          { label: "online courses", icon: <FaCreditCard />, url: "/products" },
-          { label: "coaching", icon: <FaCreditCard />, url: "/products" },
           {
-            label: "digital downloads",
-            icon: <FaBriefcase />,
-            url: "/products",
+            label: "Enterpreneur + Form page",
+            icon: "",
+            url: "",
+          },
+          {
+            label: "Post",
+            icon: "",
+            url: "",
+          },
+
+          {
+            label: "Ascent :pay",
+            icon: "",
+            url: "",
+          },
+          {
+            label: "Marketing Tools",
+            icon: "",
+            url: "",
           },
         ],
       },
+
+    
+
+      // {
+      //   title: "partials",
+      //   sublink: [
+      //     {
+      //       label: "",
+      //       icon: "",
+      //       url: "",
+      //     },
+      //   ],
+      // },
     ],
   },
 
-  // pricing
-
   {
-    page: "pricing",
+    page: "Resources",
     links: [
-      // 1
       {
-        title: "RESOURCES",
+        title: "",
         sublink: [
-          { label: "online courses", icon: <FaCreditCard />, url: "/products" },
-          { label: "coaching", icon: <FaCreditCard />, url: "/products" },
+          { label: "Podcast", icon: "", url: "" },
+          { label: "Events", icon: "", url: "" },
           {
-            label: "digital downloads",
-            icon: <FaCreditCard />,
-            url: "/products",
+            label: "Downloads",
+            icon: "",
+            url: "",
+          },
+          {
+            label: "Knowledge Base",
+            icon: "",
+            url: "",
           },
         ],
       },
 
       // 2
       {
-        title: "SUPPORT SERVICES",
+        title: "",
         sublink: [
-          { label: "online courses", icon: <FaCreditCard />, url: "/products" },
-          { label: "coaching", icon: <FaCreditCard />, url: "/products" },
           {
-            label: "digital downloads",
-            icon: <FaBriefcase />,
-            url: "/products",
+            label: "Ascent:hq",
+            icon: "",
+            url: "",
+          },
+          {
+            label: "Blog",
+            icon: "",
+            url: "",
+          },
+          {
+            label: "Examples",
+            icon: "",
+            url: "",
           },
         ],
       },
