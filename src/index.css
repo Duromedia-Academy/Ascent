@@ -24,7 +24,7 @@
  }
 
   body{
-  @apply font-GothamLight
+  @apply font-GothamLight;
  }
 
 /* target home slider section seven bullets */
@@ -35,3 +35,87 @@
  @apply bg-secondary-color ;
 }
 
+.header-btn1{
+  @apply bg-white text-btn-color max-w-[258px] h-14 flex justify-center items-center w-full py-3.5 px-7 text-base font-semibold text-center mr-5 phone-custom:max-w-full phone-custom:mb-2 phone-custom:mr-0;
+}
+
+.header-btn2{
+  @apply text-white border-2 border-white max-w-[216px] m-0 w-full py-3.5 px-7 text-base font-semibold block text-center phone-custom:max-w-full; 
+}
+
+.custom-container{
+  @apply flex items-end justify-between flex-wrap max-w-[1136px] my-0 mx-auto 
+          mobile-hidden:max-w-full mobile-hidden:px-4 
+          tablet-custom:max-w-full tablet-custom:px-8
+          pc-custom:w-auto pc-custom:mx-8
+          desktop-custom:mx-auto ;
+}
+
+.header-container{
+  @apply pb-20 pt-[60px] w-full text-white mobile-hidden:max-w-full mobile-hidden:w-full tablet-custom:max-w-full tablet-custom:w-full;
+}
+
+.information{
+  @apply relative tablet-custom:block tablet-custom:m-0 tablet-custom:max-w-full tablet-custom:p-0 mobile-hidden:block mobile-hidden:m-0 mobile-hidden:max-w-full mobile-hidden:p-0 ;
+}
+
+.information-container{
+  @apply absolute top-[-50px] flex justify-between bg-white max-w-[1136px] w-full p-0 shadow-[8px_8px_32px_rgba(45,51,58,.08)] flex-col pc-custom:max-w-none tablet-custom:relative tablet-custom:top-0 tablet-custom:flex-wrap mobile-hidden:relative mobile-hidden:top-0 mobile-hidden:flex-wrap ;
+}
+
+.video-list{
+  @apply bg-video-pattern bg-no-repeat list-none bg-[length:28px] mb-4 pl-[35px] text-lg mobile-hidden:text-base mobile-hidden:bg-[length:24px] ;
+}
+
+.review{
+  @apply flex flex-col justify-between w-[47%] max-w-[50%] mb-16 tablet-custom:w-full tablet-custom:max-w-full tablet-custom:mb-12 mobile-hidden:w-full mobile-hidden:max-w-full mobile-hidden:mb-12 ;
+}
+
+.project-image{
+  @apply tablet-custom:w-full tablet-custom:h-auto mobile-hidden:h-auto mobile-hidden:w-full w-[357px] h-[257px] ;
+}
+
+.payment-plan{
+  @apply absolute bottom-0 left-0 max-w-[370px] z-10 tablet-custom:text-center tablet-custom:max-w-[460px] tablet-custom:left-1/2 tablet-custom:translate-x-[-50%] mobile-hidden:w-full mobile-hidden:text-center mobile-hidden:max-w-[460px] mobile-hidden:left-1/2 mobile-hidden:translate-x-[-50%] ;
+}
+
+.payment-date{
+  @apply flex relative w-[50%] justify-between flex-col tablet-custom:text-center tablet-custom:mb-24 tablet-custom:w-full mobile-hidden:static mobile-hidden:text-center mobile-hidden:mb-12 mobile-hidden:w-full ;
+}
+
+.company-logo{
+  @apply tablet-custom:w-1/4  tablet-custom:mb-6 mobile-hidden:w-[33.33%] mobile-hidden:mb-6 mobile-hidden:flex mobile-hidden:justify-center mobile-hidden:items-center ;
+}
+
+.student-posters{
+  @apply w-full max-w-[356px] m-4 hover:translate-y-[-5px] duration-[0.5s] pc-custom:max-w-[30.3%] mobile-hidden:max-w-full mobile-hidden:w-full mobile-hidden:m-0 mobile-hidden:py-2 ; 
+}
+
+.studentPosters-tablet{
+  @apply w-1/2 max-w-[50%] m-0 p-4 hover:translate-y-[-5px] duration-[0.5s] ;
+}
+
+.supporter{
+  @apply text-center tablet-custom:w-[33%] tablet-custom:mb-12 mobile-hidden:w-[33%] mobile-hidden:mb-6 tablet-custom:flex tablet-custom:justify-center tablet-custom:items-center mobile-hidden:flex mobile-hidden:justify-center mobile-hidden:items-center flex-col ;
+}
+
+.supporter-img{
+  @apply w-24 h-24 mobile-hidden:p-[5px] mobile-hidden:inline-block ;
+}
+
+.supporter-name{
+  @apply mobile-hidden:text-sm font-medium text-lg text-white mt-1 mb-0;
+}
+
+.gateway-logo{
+  @apply tablet-custom:w-1/4 tablet-custom:mb-9 tablet-custom:text-center mobile-hidden:w-[33.33%] mobile-hidden:mb-6 mobile-hidden:text-center tablet-custom:flex tablet-custom:justify-center tablet-custom:items-center mobile-hidden:flex mobile-hidden:justify-center mobile-hidden:items-center
+   ;
+}
+
+.form-input{
+  @apply border border-solid border-[#d5d8dd] bg-[#f6f7f8] py-[11px] px-4 max-w-[455px] text-[16px] h-12 w-full min-h-[48px] ;
+}
+
+.video-container{
+  @apply max-w-[552px] w-[552px] pl-0 pr-0 mx-auto my-0 tablet-custom:max-w-full tablet-custom:w-full tablet-custom:p-0 pc-custom:max-w-full pc-custom:w-full pc-custom:p-0 mobile-hidden:max-w-full mobile-hidden:w-full mobile-hidden:p-0 ;  
+}

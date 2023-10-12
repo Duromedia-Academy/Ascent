@@ -339,7 +339,7 @@ const Header = () => {
                     Creator login
                   </button>
                 </Link>
-                <Link to={"/"}>
+                <Link to={"/course"}>
                   <button className=" bg-secondary-color text-white hover:bg-secondary-color/60 capitalize text-base  transition-colors duration-700   py-4 px-5 font-semibold  rounded-md">
                     start for free
                   </button>

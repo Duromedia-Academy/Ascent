@@ -1,5 +1,8 @@
 export { default as Home } from "./Home/Home";
 
+
+export { default as Course } from "./Course/Course";
+
 // export { default as About } from "./About/About";
 // export { default as Courses } from "./Courses/Courses";
 // export { default as Online } from "./Online/Online";
